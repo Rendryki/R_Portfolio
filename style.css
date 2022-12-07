@@ -1,0 +1,321 @@
+/* Configurações universais */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root{ 
+    --CorDestaque: #159A9C;
+    --CorBackground: #001924;
+    --CorBase: #B4BEC9;
+    --CorAuxiliar: #DEEFE7;
+    --FonteTipo: 'Roboto', sans-serif;
+    --FontePesada: 500;
+    --FonteLeve: 300;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--Fonte);
+    font-weight: var(--FonteLeve);
+}
+
+body{
+    background-color: var(--CorBackground);
+    margin-top: 7%;
+}
+
+strong{
+    color: var(--CorDestaque);
+}
+
+/* Barra de Navegação */
+
+#LogoRM{
+    margin: 7px 5%;
+    margin-right: auto;
+    width: 100px;
+}
+
+#NavBarItens{
+    margin-right: 5%;
+}
+
+#NavBar{
+    border: 0px; 
+    border-bottom-width: 1px;
+    border-bottom-color: var(--CorDestaque);
+    border-style: solid;
+    background-color: var(--CorBackground);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--CorDestaque);
+    font-size: large;
+    font-weight: var(--FonteLeve);
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover{
+    color: var(--CorBase);
+    border: 0px; 
+    border-bottom-width: 1px;
+    border-bottom-color: var(--CorDestaque);
+    border-style: solid;
+    background-color: var(--CorBackground);
+    padding-bottom: 0px;
+    transition: 0.7s ease-in-out;    
+}
+
+/* Conteúdo principal da página */
+
+#ConteudoPrincipal{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#TelaInicial{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 10%;
+    animation-name: FadeIn;  
+    animation-duration: 5s;   
+}
+
+#TelaInicial img{
+    width: 400px;
+}
+
+#FotoPessoal{
+    margin: auto;
+    margin-top: 100px;
+}
+
+.TituloDestaque{
+    color: var(--CorDestaque);
+    font-size: 2.8em;
+    font-weight: var(--FontePesada);
+}
+
+.ConteudoTexto{
+    color: var(--CorBase);
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 20px;  
+}
+
+/* Seção Sobre Mim */
+
+#VejaMaisSobreMim{
+    background-color: var(--CorDestaque);
+    color: var(--CorBase);
+    font-weight: 700;
+    padding: 5px;
+    width: 10%;
+    border-radius: 20px;
+    border-color: var(--CorBackground);
+    margin: 40px 45%;
+}
+
+#SobreMim{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* Seção Habilidades */
+
+#VejaMaisHabilidades{
+    background-color: var(--CorDestaque);
+    color: var(--CorBase);
+    font-weight: 700;
+    padding: 5px;
+    width: 10%;
+    border-radius: 20px;
+    border-color: var(--CorBackground);
+    margin: 10px 45%;
+}
+
+#Habilidades{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* Seção Projetos */
+
+#VejaMaisProjetos{
+    background-color: var(--CorDestaque);
+    color: var(--CorBase);
+    font-weight: 700;
+    padding: 5px;
+    width: 10%;
+    border-radius: 20px;
+    border-color: var(--CorBackground);
+    margin: 40px 45%;
+}
+
+#Projetos{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+
+#ProjetosWrapper{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3.3%;
+}
+
+.ImgProjetos{
+    margin: 20px;
+    width: 300px;
+}
+
+.TituloProjeto{
+    color: var(--CorDestaque);
+    font-weight: var(--FontePesada);
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.DescricaoProjeto{
+    color: var(--CorBase);
+    font-size: 0.9em;
+    font-weight: 300;
+    padding: 0px 20px;
+}
+
+.GridProjetosWrapped{
+    transition: 0.7s ease-in-out;
+    transform:  scale(1.0);
+    position: relative;
+}
+
+.GridProjetosEscondidosWrapped{
+    transition: 0.7s ease-in-out;
+    transform:  scale(1.0);
+    position: relative;
+    display: none;
+}
+
+.OverlayProjetoEmDesenvolvimento{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--CorDestaque);
+    overflow: hidden;
+    width: 0;
+    height: 95%;
+    transition: .5s ease;
+}
+
+.TextoOverlay{
+    color: var(--CorBase);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.LinkProjeto{
+    text-decoration: none;
+}
+
+.GridProjetosWrapped:hover, .GridProjetosEscondidosWrapped:hover{
+    transition: 0.7s ease-in-out;
+    transform:  scale(1.05);
+}
+
+.GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
+.GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
+{
+    width: 100%;
+}
+
+/* Seção Contatos */
+
+#VejaMaisContato{
+    background-color: var(--CorDestaque);
+    color: var(--CorBase);
+    font-weight: 700;
+    padding: 5px;
+    width: 10%;
+    border-radius: 20px;
+    border-color: var(--CorBackground);
+    margin: 40px 45%;
+}
+
+#Contato{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+}
+
+#Contato nav{
+    text-align: center;
+}
+
+.LogosContatos{
+    display: inline-block;
+    margin: 100px 5%;    
+    transition: 0.7s ease-in-out;
+    transform:  scale(1.0);
+}
+
+.LogosContatos img{
+    width: 70px;   
+    padding-bottom: 10px;
+}
+
+.LogosContatos .LogoContatoTitulo{
+    color: var(--CorDestaque);
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+.modal-content{
+    background-color: var(--CorDestaque);
+    color: var(--CorAuxiliar);
+    font-size: large;
+}
+
+.LogosContatos:hover{
+    transition: 0.7s ease-in-out;
+    transform:  scale(1.2);
+}
+
+/* Animations */
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* MediaQuerry */
+
+@media only screen and (max-width: 1120px) and (min-width: 900px) {
+    #ConteudoPrincipal{
+        max-width: 800px;
+        margin: auto;
+    }
+    .ImgProjetos{
+        margin: 20px;
+        width: 200px;
+    }
+    #FotoPessoal{
+        margin: auto;
+        margin-top: 150px;
+        max-width: 300px;
+    }
+}

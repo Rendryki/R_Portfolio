@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Stylesheet CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link JavaScript -->
+    <script src="Assets/pageEvents.js"></script>
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="Images/SVG/logoRM.svg" type="image/x-icon">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="container-fluid"> <!-- Cabeçalho barra de navegação -->
+        
+        <nav class="navbar navbar-expand-sm fixed-top" id="NavBar"> <!-- Barra de navegação com todos os links das seções do portfolio -->
+            
+            <img id="LogoRM" src="Images/SVG/logoRM.svg" alt="Logo RM"> <!-- Logo RM -->
+
+            <ul class="nav justify-content-end" id="NavBarItens"> <!-- Lista de itens da barra de navegação -->
+
+                <li class="nav-item"><a href="#SobreMim" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#Habilidades" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#Contato" class="nav-link">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="ConteudoPrincipal">
+
+        <section id="TelaInicial"> <!-- Seção de conteúdos da tela inicial -->
+
+            <div> <!-- Empacotador do Grid texto-imagem -->
+                <h1 class="TituloDestaque">{Desenvolvedor Front-End}</h1>
+                <p class="ConteudoTexto">Olá, Meu nome é <strong>Rendryki Melo</strong>, sou um jovem estudante de TI, atualmente estou focando meus estudos em aprender mais sobre <strong>Desenvolvimento Front-End</strong>. Tive meu primeiro contato com Desenvolvimento em 2019, e em 2022 resolvi retomar esse contato de uma vez por todas!<br> Estou em busca de oportunidades para desenvolver meus conhecimentos teóricos e práticos e me tornar um <strong>Dev Front-End</strong>!</p>
+            </div>
+
+            <img src="Images/SVG/logoRM.svg" alt="Foto pessoal" id="FotoPessoal">
+
+        </section>
+
+        <section id="SobreMim"> <!-- Seção de conteudos da aba "sobre mim" -->
+
+            <h1 class="TituloDestaque">{Sobre mim}</h1>
+            <p class="ConteudoTexto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum laudantium quod cupiditate hic ducimus molestiae, expedita nam dicta quisquam dolor quibusdam porro velit corporis quidem voluptatum illo atque nobis? Consectetur sequi aspernatur, autem dolorem illum nesciunt quidem maxime impedit earum inventore dicta repellendus totam atque porro aperiam repellat reiciendis laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas! Ipsa, velit, consectetur porro consequatur explicabo dolore alias doloremque blanditiis eius distinctio obcaecati id saepe, sequi omnis quas quae animi.</p>
+
+            <input type="button" id="VejaMaisSobreMim" value="Ver mais" onclick="carregarSM ()">  
+
+        </section>
+
+        <section id="Habilidades"> <!-- Seção de conteudos da aba "habilidades" -->
++
+            <h1 class="TituloDestaque">{Habilidades}</h1>
+            <p class="ConteudoTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem alias amet in provident repellat illum corporis facilis excepturi, quos voluptatum porro nam dolores quisquam recusandae exercitationem aliquam labore mollitia ratione. Quos, possimus molestias! Numquam tenetur debitis, odit, praesentium dolores sequi tempore rerum consequatur minima, quas nisi expedita necessitatibus molestias modi ratione ducimus ea vero dicta quidem unde fugit sunt? Suscipit optio eaque consequatur quos impedit explicabo, voluptas enim libero beatae quis saepe tenetur in cupiditate aut commodi ab odio dignissimos blanditiis. Vitae voluptatum doloremque dolores, quibusdam labore nam dolorum dignissimos cum fuga magnam asperiores vero sunt dolore. Doloribus, maiores.</p>
+            <input type="button" id="VejaMaisHabilidades" value="Ver mais">  
+
+        </section>
+
+        <section id="Projetos"> <!-- Seção de conteudos da aba "projetos" -->
+
+            <h1 class="TituloDestaque">{Projetos}</h1>
+
+            <div id="ProjetosWrapper">
+
+                <div class="GridProjetosWrapped"> 
+                    <div class="OverlayProjetoEmDesenvolvimento">
+                        <p class="TextoOverlay">Em Breve</p>
+                    </div>
+                    <a href="#" class="LinkProjeto">
+                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                    </a>
+                </div>
+
+                <div class="GridProjetosWrapped"> 
+                    <div class="OverlayProjetoEmDesenvolvimento">
+                        <p class="TextoOverlay">Em Breve</p>
+                    </div>
+                    <a href="#" class="LinkProjeto">
+                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                    </a>
+                </div>
+
+                <div class="GridProjetosWrapped"> 
+                    <div class="OverlayProjetoEmDesenvolvimento">
+                        <p class="TextoOverlay">Em Breve</p>
+                    </div>
+                    <a href="#" class="LinkProjeto">
+                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                    </a>
+                </div>
+
+                
+                <div class="GridProjetosEscondidosWrapped"> 
+                    <div class="OverlayProjetoEmDesenvolvimento">
+                        <p class="TextoOverlay">Em Breve</p>
+                    </div>
+                    <a href="" class="LinkProjeto">
+                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                    </a>
+                </div>
+
+                <div class="GridProjetosEscondidosWrapped"> 
+                    <div class="OverlayProjetoEmDesenvolvimento">
+                        <p class="TextoOverlay">Em Breve</p>
+                    </div>
+                    <a href="" class="LinkProjeto">
+                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                    </a>
+                </div>
+
+                <div class="GridProjetosEscondidosWrapped"> 
+                    <div class="OverlayProjetoEmDesenvolvimento">
+                        <p class="TextoOverlay">Em Breve</p>
+                    </div>
+                    <a href="" class="LinkProjeto">
+                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                    </a>
+                </div>
+                
+                
+
+            </div>
+            
+            <input type="button" id="VejaMaisProjetos" value="Ver mais">  
+
+        </section>
+
+        <section id="Contato"> <!-- Seção de conteudos da aba "contato" -->
+
+            <h1 class="TituloDestaque">{Contato}</h1>
+            <nav>
+
+                <div class="LogosContatos" data-bs-toggle="modal" data-bs-target="#ModalLocalizacao">
+                    <img src="Images/SVG/logoLocalizacao.svg" alt="Logo contato localização">
+                    <h3 class="LogoContatoTitulo">Localização</h3>
+                </div>
+
+                <div class="LogosContatos" data-bs-toggle="modal" data-bs-target="#ModalTelefone">
+                    <img src="Images/SVG/logoTelefone.svg" alt="Logo contato telefone">
+                    <h3 class="LogoContatoTitulo">Telefone</h3>
+                </div>
+
+                <div class="LogosContatos" data-bs-toggle="modal" data-bs-target="#ModalEmail">
+                    <img src="Images/SVG/logoEmail.svg" alt="Logo contato E-mail">
+                    <h3 class="LogoContatoTitulo">E-mail</h3>
+                </div>
+
+                <div class="LogosContatos" data-bs-toggle="modal" data-bs-target="#ModalGitHub">
+                    <img src="Images/SVG/logoGitHub.svg" alt="Logo contato GitHub">
+                    <h3 class="LogoContatoTitulo">GitHub</h3>
+                </div>
+
+                <div class="LogosContatos" data-bs-toggle="modal" data-bs-target="#ModalLinkedIn">
+                    <img src="Images/SVG/logoLinkedIn.svg" alt="Logo contato LinkedIn">
+                    <h3 class="LogoContatoTitulo">LinkedIn</h3>
+                </div>
+
+            </nav>
+
+            <Section id="ModalsContents">
+                <div class="modal" id="ModalLocalizacao">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Localização</h4>
+                            <button type="button" class="btn-close" id="modalbutton" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                            <p>Rua Marçal de Freitas, N° 348 - Santa Maria, Ibirité, Minas Gerais.</p>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="ModalTelefone">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Telefone</h4>
+                            <button type="button" class="btn-close" id="modalbutton" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                            <h5>Número e WhatsApp: </h5>
+                            <p>(31) 9 9846-5458</p>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="ModalEmail">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">E-mail</h4>
+                            <button type="button" class="btn-close" id="modalbutton" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                            <h5>Email Profissional: </h5>
+                            <p>rendrykimelo.pro@gmail.com</p>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="ModalGitHub">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">GitHub</h4>
+                            <button type="button" class="btn-close" id="modalbutton" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                            <p>github.com/Rendryki</p>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="ModalLinkedIn">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">LinkedIn</h4>
+                            <button type="button" class="btn-close" id="modalbutton" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                            <p>linkedin.com/in/rendryki-melo/</p>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+            </Section>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
