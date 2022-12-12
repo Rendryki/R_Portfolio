@@ -248,17 +248,6 @@ strong{
 
 /* Seção Contatos */
 
-#VejaMaisContato{
-    background-color: var(--CorDestaque);
-    color: var(--CorBase);
-    font-weight: 700;
-    padding: 5px;
-    width: 10%;
-    border-radius: 20px;
-    border-color: var(--CorBackground);
-    margin: 40px 45%;
-}
-
 #Contato{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -336,17 +325,159 @@ strong{
 /* MediaQuerry */
 
 @media only screen and (max-width: 1120px) and (min-width: 900px) {
+
     #ConteudoPrincipal{
         max-width: 800px;
         margin: auto;
-    }
-    .ImgProjetos{
-        margin: 20px;
-        width: 200px;
     }
     #FotoPessoal{
         margin: auto;
         margin-top: 150px;
         max-width: 300px;
     }
+    #VejaMaisProjetos, #VejaMaisHabilidades, #VejaMaisSobreMim{
+        padding: 5px;
+        width: 15%;
+        border-radius: 20px;
+        margin: 20px 41%;
+    }
+    .ImgProjetos{
+        margin: 20px;
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 899px) and (min-width: 630px){
+    
+    #ConteudoPrincipal{
+        max-width: 600px;
+        margin: auto;
+    }
+    #TelaInicial{
+        grid-template-columns: 100%;      
+    }
+    #FotoPessoal{
+        margin: auto;       
+        max-width: 300px;
+    }
+    #LogoRM:hover{
+        content: url(Images/SVG/logoRM.svg);
+        margin: 7px 5%;
+        margin-right: auto;
+        width: 100px;
+    }
+    #ProjetosWrapper{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 3.3%;
+    }
+    #VejaMaisProjetos, #VejaMaisHabilidades, #VejaMaisSobreMim{
+        padding: 5px;
+        width: 20%;
+        border-radius: 20px;
+        margin: 20px 38%;
+    }
+    .TituloDestaque{
+        font-size: 2.5em;
+        margin: auto;
+    }
+    .ConteudoTexto{
+        font-size: 1em;
+        text-align: justify;
+        padding: 15px;  
+    }
+    .ImgProjetos{
+        margin: 20px;
+        max-width: 85%;
+    }
+    
+    .LogosContatos{
+        margin: 100px 4%;    
+    }
+    .LogosContatos img{
+        width: 60px;   
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 629px) and (min-width: 300px){
+    
+    #ConteudoPrincipal{
+        max-width: 400px;
+        margin: auto;
+    }
+    #TelaInicial{
+        grid-template-columns: 100%;      
+    }
+    #FotoPessoal{
+        margin: auto;
+        max-width: 200px;
+    }
+    #LogoRM{
+        display: block;
+        margin: 10px auto;
+        content: url(Images/SVG/logoRMcompleto.svg);
+        width: 300px;
+    }
+    #LogoRM:hover{
+        display: block;
+        margin: 10px auto;
+        content: url(Images/SVG/logoRMcompleto.svg);
+        width: 300px;
+    }
+    #NavBar{
+        display: block;
+    }
+    #NavBarItens{
+        width: 100%;
+        text-align: center;
+        
+    }
+    #Contato, #Projetos, #SobreMim, #Habilidades{
+        padding-top: 150px;
+        margin: auto;
+    }
+    #ProjetosWrapper{
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+     #VejaMaisHabilidades, #VejaMaisSobreMim{
+        padding: 5px;
+        width: 30%;
+        border-radius: 20px;
+        margin: 40px 34%;
+    }
+    #VejaMaisProjetos{
+        margin: 80px 34%;
+        width: 30%;
+    }
+    .TituloDestaque{
+        font-size: 2em;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .ConteudoTexto{
+        font-size: 1em;
+        text-align: justify;
+        padding: 10px 0px;  
+    }
+    .ImgProjetos{
+        margin: 20px auto;
+        max-width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .LogosContatos{
+        margin: 40px 15% 10px;    
+    }
+    .LogosContatos img{
+        width: 70px;   
+        padding-bottom: 10px;
+    }
+
 }
