@@ -330,6 +330,45 @@ strong{
     }
 }
 
+[data-animation] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-animation="down"] {
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-animation="up"] {
+    transform: translate3d(0, 100%, 0);
+    transition: 1.5s;
+}
+
+[data-animation="left"] {
+    transform: translate3d(-100%, 0, 0);
+    transition: 1.5s;
+}
+
+[data-animation="right"] {
+    transform: translate3d(50px ,0 ,0);
+    transition: 1.5s;
+}
+
+[data-animation="in"] {
+    opacity: 1;
+}
+
+[data-animation="zoomOut"] {
+    opacity: 1;
+    transform: scale(0.75);
+    transition: 1.5s;
+}
+  
+[data-animation].animate {
+    opacity: 1;
+    transform: translate3d(0 ,0 ,0);
+}
+
 /* MediaQuerry */
 
 @media only screen and (max-width: 1120px) and (min-width: 900px) {
@@ -364,6 +403,10 @@ strong{
     .ImgProjetos{
         margin: 20px 0px;
         width: 100%;
+    }
+    [data-animation="right"] {
+        transform: translate3d(-100%, 0, 0);
+        transition: 1.5s;
     }
 
 }
@@ -426,7 +469,10 @@ strong{
         width: 60px;   
         padding-bottom: 10px;
     }
-    
+    [data-animation="right"] {
+        transform: translate3d(-100%, 0, 0);
+        transition: 1.5s;
+    }
 }
 
 @media only screen and (max-width: 629px) and (min-width: 350px){
@@ -467,7 +513,6 @@ strong{
     #NavBarItens{
         margin: 0px;
         text-align: center;
-        
     }
     #Contato, #Projetos, #SobreMim, #Habilidades{
         padding-top: 150px;
@@ -490,6 +535,9 @@ strong{
     }
     .nav-link{
         font-size: 0.8em;
+    }
+    .nav-link:hover{      
+        margin-bottom: 5px;  
     }
     .TituloDestaque{
         font-size: 2em;
@@ -519,7 +567,10 @@ strong{
         width: 70px;   
         padding-bottom: 10px;
     }
-
+    [data-animation="right"] {
+        transform: translate3d(-100%, 0, 0);
+        transition: 1.5s;
+    }
 }
 @media only screen and (max-width: 349px){
      
@@ -582,6 +633,9 @@ strong{
     .nav-link{
         font-size: 0.55em;
     }
+    .nav-link:hover{      
+        margin-bottom: 5px;  
+    }
     .TituloDestaque{
         font-size: 2em;
         margin: auto;
@@ -607,5 +661,8 @@ strong{
         width: 70px;   
         padding-bottom: 10px;
     }
-
+    [data-animation="right"] {
+        transform: translate3d(-100%, 0, 0);
+        transition: 1.5s;
+    }
 }

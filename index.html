@@ -16,9 +16,6 @@
     <!-- Link para Stylesheet CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Link JavaScript -->
-    <script src="Assets/pageEvents.js"></script>
-
     <!-- Link Favicon -->
     <link rel="shortcut icon" href="Images/SVG/logoRM.svg" type="image/x-icon">
 
@@ -57,7 +54,7 @@
 
         </section>
 
-        <section id="SobreMim" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000"> <!-- Seção de conteudos da aba "sobre mim" -->
+        <section id="SobreMim" data-animation="left"> <!-- Seção de conteudos da aba "sobre mim" -->
 
             <h1 class="TituloDestaque">{Sobre mim}</h1>
             <p class="ConteudoTexto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum laudantium quod cupiditate hic ducimus molestiae, expedita nam dicta quisquam dolor quibusdam porro velit corporis quidem voluptatum illo atque nobis? Consectetur sequi aspernatur, autem dolorem illum nesciunt quidem maxime impedit earum inventore dicta repellendus totam atque porro aperiam repellat reiciendis laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas! Ipsa, velit, consectetur porro consequatur explicabo dolore alias doloremque blanditiis eius distinctio obcaecati id saepe, sequi omnis quas quae animi.</p>
@@ -66,7 +63,7 @@
 
         </section>
 
-        <section id="Habilidades" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="900"> <!-- Seção de conteudos da aba "habilidades" -->
+        <section id="Habilidades" data-animation="right"> <!-- Seção de conteudos da aba "habilidades" -->
 
             <h1 class="TituloDestaque">{Habilidades}</h1>
             <p class="ConteudoTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem alias amet in provident repellat illum corporis facilis excepturi, quos voluptatum porro nam dolores quisquam recusandae exercitationem aliquam labore mollitia ratione. Quos, possimus molestias! Numquam tenetur debitis, odit, praesentium dolores sequi tempore rerum consequatur minima, quas nisi expedita necessitatibus molestias modi ratione ducimus ea vero dicta quidem unde fugit sunt? Suscipit optio eaque consequatur quos impedit explicabo, voluptas enim libero beatae quis saepe tenetur in cupiditate aut commodi ab odio dignissimos blanditiis. Vitae voluptatum doloremque dolores, quibusdam labore nam dolorum dignissimos cum fuga magnam asperiores vero sunt dolore. Doloribus, maiores.</p>
@@ -74,11 +71,11 @@
 
         </section>
 
-        <section id="Projetos" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000"> <!-- Seção de conteudos da aba "projetos" -->
+        <section id="Projetos" data-animation="in"> <!-- Seção de conteudos da aba "projetos" -->
 
-            <h1 class="TituloDestaque">{Projetos}</h1>
+            <h1 class="TituloDestaque" data-animation="up">{Projetos}</h1>
 
-            <div id="ProjetosWrapper">
+            <div id="ProjetosWrapper" data-animation="right">
 
                 <div class="GridProjetosWrapped"> 
                     <div class="OverlayProjetoEmDesenvolvimento">
@@ -155,32 +152,32 @@
 
         </section>
 
-        <section id="Contato" data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="700"> <!-- Seção de conteudos da aba "contato" -->
+        <section id="Contato" data-animation="zoomOut"> <!-- Seção de conteudos da aba "contato" -->
 
             <h1 class="TituloDestaque">{Contato}</h1>
             <nav>
 
-                <div class="LogosContatos" data-bs-toggle="popover" data-bs-placement="bottom" title="Localização" data-bs-content="Rua Marçal de Freitas, N° 348 - Santa Maria, Ibirité, Minas Gerais">
+                <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="Localização" data-bs-content="Rua Marçal de Freitas, N° 348 - Santa Maria, Ibirité, Minas Gerais">
                     <img src="Images/SVG/logoLocalizacao.svg" alt="Logo contato localização">
                     <h3 class="LogoContatoTitulo">Localização</h3>
                 </div>
 
-                <div class="LogosContatos" data-bs-toggle="popover" data-bs-placement="bottom" title="Número e WhatsApp" data-bs-content="(31) 9 9846-5458">
+                <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="Número e WhatsApp" data-bs-content="(31) 9 9846-5458">
                     <img src="Images/SVG/logoTelefone.svg" alt="Logo contato telefone">
                     <h3 class="LogoContatoTitulo">Telefone</h3>
                 </div>
 
-                <div class="LogosContatos" data-bs-toggle="popover" data-bs-placement="bottom" title="E-mail Profissional" data-bs-content="rendrykimelo.pro@gmail.com">
+                <div class="LogosContatos"  data-animation="left"data-bs-toggle="popover" data-bs-placement="bottom" title="E-mail Profissional" data-bs-content="rendrykimelo.pro@gmail.com">
                     <img src="Images/SVG/logoEmail.svg" alt="Logo contato E-mail">
                     <h3 class="LogoContatoTitulo">E-mail</h3>
                 </div>
 
-                <div class="LogosContatos" data-bs-toggle="popover" data-bs-placement="bottom" title="GitHub" data-bs-content="github.com/Rendryki">
+                <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="GitHub" data-bs-content="github.com/Rendryki">
                     <img src="Images/SVG/logoGitHub.svg" alt="Logo contato GitHub">
                     <h3 class="LogoContatoTitulo">GitHub</h3>
                 </div>
 
-                <div class="LogosContatos" data-bs-toggle="popover" data-bs-placement="bottom" title="LinkedIn" data-bs-content="linkedin.com/in/rendryki-melo/">
+                <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="LinkedIn" data-bs-content="linkedin.com/in/rendryki-melo/">
                     <img src="Images/SVG/logoLinkedIn.svg" alt="Logo contato LinkedIn">
                     <h3 class="LogoContatoTitulo">LinkedIn</h3>
                 </div>
@@ -190,14 +187,9 @@
         </section>
 
     </main>
-    
-    <script> //Inicializar AOS Library e Bootstrap
 
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-        })
+    <!-- Link JavaScript -->
+    <script src="Assets/pageEvents.js"></script>
 
-    </script> 
 </body>
 </html>
