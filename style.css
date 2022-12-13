@@ -20,7 +20,8 @@
 
 body{
     background-color: var(--CorBackground);
-    margin-top: 7%; 
+    margin: 7% auto;
+    width: 1100px;
 }
 
 strong{
@@ -34,6 +35,7 @@ strong{
     margin-right: auto;
     width: 100px;
 }
+
 
 #LogoRM:hover{
     content: url(Images/SVG/logoRMcompleto.svg);
@@ -52,6 +54,7 @@ strong{
     border-bottom-color: var(--CorDestaque);
     border-style: solid;
     background-color: var(--CorBackground);
+    
 }
 
 .nav-link{
@@ -92,7 +95,11 @@ strong{
 }
 
 #TelaInicial img{
-    width: 400px;
+    width: 100%;
+}
+
+#tituloTelaInicial{
+    font-size: 2.75em;   
 }
 
 #FotoPessoal{
@@ -170,13 +177,14 @@ strong{
 
 #ProjetosWrapper{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
     gap: 3.3%;
 }
 
 .ImgProjetos{
-    margin: 20px;
-    width: 300px;
+    margin: 20px 0px;
+    width: 100%;
 }
 
 .TituloProjeto{
@@ -325,10 +333,15 @@ strong{
 /* MediaQuerry */
 
 @media only screen and (max-width: 1120px) and (min-width: 900px) {
-
+    body{
+        width: 900px;
+    }
     #ConteudoPrincipal{
-        max-width: 800px;
+        max-width: 900px;
         margin: auto;
+    }
+    #tituloTelaInicial{
+        font-size: 2.2em;   
     }
     #FotoPessoal{
         margin: auto;
@@ -341,17 +354,26 @@ strong{
         border-radius: 20px;
         margin: 20px 41%;
     }
+    #Contato, #SobreMim, #Habilidades{
+        padding-top: 150px;
+    }
+    #ProjetosWrapper{
+        margin: auto;
+        padding: 10px;
+    }
     .ImgProjetos{
-        margin: 20px;
-        width: 200px;
+        margin: 20px 0px;
+        width: 100%;
     }
 
 }
 
 @media only screen and (max-width: 899px) and (min-width: 630px){
-    
+    body{
+        width: 630px;
+    }
     #ConteudoPrincipal{
-        max-width: 600px;
+        max-width: 630px;
         margin: auto;
     }
     #TelaInicial{
@@ -369,7 +391,7 @@ strong{
     }
     #ProjetosWrapper{
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: auto auto auto;
         gap: 3.3%;
     }
     #VejaMaisProjetos, #VejaMaisHabilidades, #VejaMaisSobreMim{
@@ -377,6 +399,9 @@ strong{
         width: 20%;
         border-radius: 20px;
         margin: 20px 38%;
+    }
+    #Contato, #Projetos, #SobreMim, #Habilidades{
+        margin: auto;
     }
     .TituloDestaque{
         font-size: 2.5em;
@@ -388,10 +413,12 @@ strong{
         padding: 15px;  
     }
     .ImgProjetos{
-        margin: 20px;
-        max-width: 85%;
+        margin: 20px 0px;
+        max-width: 100%;
     }
-    
+    .TituloProjeto{
+        font-size: 1.7em;
+    }
     .LogosContatos{
         margin: 100px 4%;    
     }
@@ -402,14 +429,21 @@ strong{
     
 }
 
-@media only screen and (max-width: 629px) and (min-width: 300px){
-    
+@media only screen and (max-width: 629px) and (min-width: 350px){
+     
+    body{
+        width: 350px;
+        
+    }
     #ConteudoPrincipal{
-        max-width: 400px;
-        margin: auto;
+        max-width: 350px;
+        margin: auto;           
     }
     #TelaInicial{
         grid-template-columns: 100%;      
+    }
+    #tituloTelaInicial{
+        font-size: 1.65em;   
     }
     #FotoPessoal{
         margin: auto;
@@ -431,9 +465,100 @@ strong{
         display: block;
     }
     #NavBarItens{
-        width: 100%;
+        margin: 0px;
         text-align: center;
         
+    }
+    #Contato, #Projetos, #SobreMim, #Habilidades{
+        padding-top: 150px;
+        margin: auto;
+    }
+    #ProjetosWrapper{
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+    #VejaMaisHabilidades, #VejaMaisSobreMim{
+        padding: 5px;
+        width: 30%;
+        border-radius: 20px;
+        margin: 40px 34%;
+    }
+    #VejaMaisProjetos{
+        margin: 80px 34%;
+        width: 30%;
+    }
+    .nav-link{
+        font-size: 0.8em;
+    }
+    .TituloDestaque{
+        font-size: 2em;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .ConteudoTexto{
+        font-size: 1em;
+        text-align: justify;
+        padding: 10px 0px;  
+    }
+    .ImgProjetos{
+        margin: 20px auto;
+        max-width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .TituloProjeto{
+        font-size: 1.5em;
+    }
+    .LogosContatos{
+        margin: 40px 10% 10px;    
+    }
+    .LogosContatos img{
+        width: 70px;   
+        padding-bottom: 10px;
+    }
+
+}
+@media only screen and (max-width: 349px){
+     
+    body{
+        width: 280px;
+        
+    }
+    #ConteudoPrincipal{
+        max-width: 280px;
+        margin: auto;           
+    }
+    #TelaInicial{
+        grid-template-columns: 100%;      
+    }
+    #FotoPessoal{
+        margin: auto;
+        max-width: 200px;
+    }
+    #tituloTelaInicial{
+        font-size: 2em;   
+    }
+    #LogoRM{
+        display: block;
+        margin: 10px auto;
+        content: url(Images/SVG/logoRMcompleto.svg);
+        width: 280px;
+    }
+    #LogoRM:hover{
+        display: block;
+        margin: 10px auto;
+        content: url(Images/SVG/logoRMcompleto.svg);
+        width: 300px;
+    }
+    #NavBar{
+        display: block;
+    }
+    #NavBarItens{
+        margin: 0px;
+        text-align: center;
     }
     #Contato, #Projetos, #SobreMim, #Habilidades{
         padding-top: 150px;
@@ -454,6 +579,9 @@ strong{
         margin: 80px 34%;
         width: 30%;
     }
+    .nav-link{
+        font-size: 0.55em;
+    }
     .TituloDestaque{
         font-size: 2em;
         margin: auto;
@@ -473,7 +601,7 @@ strong{
         justify-content: center;
     }
     .LogosContatos{
-        margin: 40px 15% 10px;    
+        margin: 40px 10% 10px;    
     }
     .LogosContatos img{
         width: 70px;   
