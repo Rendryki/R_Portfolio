@@ -175,7 +175,7 @@ strong{
     width: 10%;
     border-radius: 20px;
     border-color: var(--CorBackground);
-    margin: 40px 45%;
+    margin: 50px 45%;
 }
 #Projetos{
     padding-top: 150px;
@@ -191,6 +191,10 @@ strong{
 .ImgProjetos{
     margin: 20px 0px;
     width: 100%;
+    height: 80%;
+    max-height: 195px;
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.363);
 }
 .TituloProjeto{
     color: var(--CorDestaque);
@@ -363,11 +367,17 @@ strong{
         margin-top: 150px;
         max-width: 300px;
     }
-    #VejaMaisProjetos, #VejaMaisHabilidades, #VejaMaisSobreMim{
+    #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
         width: 15%;
         border-radius: 20px;
         margin: 20px 41%;
+    }
+    #VejaMaisProjetos{
+        padding: 5px;
+        width: 15%;
+        border-radius: 20px;
+        margin: 50px 41%;
     }
     #Contato, #SobreMim, #Habilidades{
         padding-top: 150px;
@@ -382,6 +392,7 @@ strong{
     .ImgProjetos{
         margin: 20px 0px;
         width: 100%;
+        height: 60%;
     }
     [data-animation="right"] {
         transform: translate3d(-100%, 0, 0);
@@ -415,11 +426,17 @@ strong{
         grid-template-columns: auto auto auto;
         gap: 3.3%;
     }
-    #VejaMaisProjetos, #VejaMaisHabilidades, #VejaMaisSobreMim{
+    #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
         width: 20%;
         border-radius: 20px;
         margin: 20px 38%;
+    }
+    #VejaMaisProjetos{
+        padding: 5px;
+        width: 20%;
+        border-radius: 20px;
+        margin: 70px 38%; 
     }
     #Contato, #Projetos, #SobreMim, #Habilidades{
         margin: auto;
@@ -439,6 +456,7 @@ strong{
     .ImgProjetos{
         margin: 20px 0px;
         max-width: 100%;
+        height: 50%;
     }
     .TituloProjeto{
         font-size: 1.7em;
@@ -533,7 +551,7 @@ strong{
     .btns-estilo-pagina{
         top: 120px;
         width: 20%;
-        font-size: 0.7em;
+        font-size: 0.6em;
         z-index: 2;
     }
     .ImgProjetos{
@@ -560,8 +578,7 @@ strong{
 }
 @media only screen and (max-width: 349px){
     body{
-        width: 280px;
-        
+        width: 280px;  
     }
     #ConteudoPrincipal{
         max-width: 280px;
@@ -613,7 +630,7 @@ strong{
         margin: 40px 34%;
     }
     #VejaMaisProjetos{
-        margin: 80px 34%;
+        margin: 120px 34%;
         width: 30%;
     }
     .nav-link{
@@ -637,12 +654,13 @@ strong{
         top: 110px;
         right: 5px;
         width: 20%;
-        font-size: 3vw;
+        font-size: 2.5vw;
         z-index: 2;
     }
     .ImgProjetos{
         margin: 20px auto;
         max-width: 100%;
+        height: 55%;
         display: block;
         align-items: center;
         justify-content: center;
