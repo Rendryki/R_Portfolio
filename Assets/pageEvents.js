@@ -57,8 +57,8 @@ document.getElementById("VejaMaisSobreMim").addEventListener("click", () => { //
     document.getElementById("VejaMaisSobreMim").style.display = "none";
 });
 
-document.getElementById("VejaMaisHabilidades").addEventListener("click", () => { // texto complementar "habilidades"
+function carregarSM(){
     document.querySelectorAll(".ConteudoTexto")[2].innerHTML = " Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong> e na biblioteca Front-End <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também possuo conhecimento básico em <strong>C#</strong>, <strong>C++</strong> e <strong>PHP</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>. ";
 
     document.getElementById("VejaMaisHabilidades").style.display = "none";
-});
+}
