@@ -52,13 +52,13 @@ document.getElementById("btn-tela-escura").addEventListener("click", () => { // 
 });
 
 document.getElementById("VejaMaisSobreMim").addEventListener("click", () => { // texto complementar "sobre mim"
-    document.querySelectorAll(".ConteudoTexto")[1].innerHTML += "<br> Concluí o ensino médio e técnico na modalidade integral, no Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais - Campus Ibirité, meu curso técnico é na área da Automação Industrial, onde desenvolvi projetos de nível acadêmico. Dentre os diversos projetos, desenvolvi uma urna eletrônica inteiramente em C++, este foi o meu primeiro contato real com a programação. <br> Além de projetos, também cursei disciplinas voltadas a programação, tendo contato com Microcontroladores e Arduínos. Posteriormente à conclusão do meu curso técnico, cheguei a cursar o primeiro período de Engenharia Elétrica na Universidade Federal de Minas Gerais, onde também tive contato com a programação através do C#, mas no decorrer do primeiro semestre, resolvi mudar de curso e buscar inserção ná área do TI, me interessando pelo desenvolvimento Front-End e pela possibilidade de me tornar um desenvolvedor.";
+    document.querySelectorAll(".ConteudoTexto")[1].innerHTML += "<br> Concluí o ensino médio e técnico na modalidade integral, no Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais - Campus Ibirité, no curso técnico de Automação Industrial, onde desenvolvi projetos de nível acadêmico. Dentre os diversos projetos, desenvolvi uma urna eletrônica inteiramente em C++, este foi o meu primeiro contato real com a programação.<br> Além de projetos, também cursei disciplinas voltadas a programação, tendo contato com Microcontroladores e Arduínos. Posteriormente à conclusão do meu curso técnico, cheguei a cursar o primeiro período de Engenharia Elétrica na Universidade Federal de Minas Gerais, onde também tive contato com a programação através do C#, mas no decorrer do primeiro semestre, resolvi mudar de curso e buscar inserção ná área do TI, me interessando pelo desenvolvimento Front-End e pela possibilidade de me tornar um desenvolvedor.";
     
     document.getElementById("VejaMaisSobreMim").style.display = "none";
 });
 
 document.getElementById("VejaMaisHabilidades").addEventListener("click", () => { // texto complementar "habilidades"
-    document.querySelectorAll(".ConteudoTexto")[2].innerHTML = " Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong> e na biblioteca Front-End <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também possuo conhecimento básico em <strong>C#</strong>, <strong>C++</strong> e <strong>PHP</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>. ";
+    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> ";
 
     document.getElementById("VejaMaisHabilidades").style.display = "none";
 });
