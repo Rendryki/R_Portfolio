@@ -1,62 +1,69 @@
 /* Configurações universais */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-:root{ 
+:root{
+    --FonteTipo: 'Roboto', sans-serif;
+}
+/* variáveis do site com visualização escura */
+.dark-style{ 
     --CorDestaque: #159A9C;
     --CorBackground: #001924;
     --CorBase: #B4BEC9;
     --CorAuxiliar: #DEEFE7;
-    --FonteTipo: 'Roboto', sans-serif;
     --FontePesada: 500;
     --FonteLeve: 300;
+    --logoRM: url(Images/SVG/logoRMcompleto.svg);
+    --RMlogosigla: url(Images/SVG/logoRM.svg);
 }
-
+/* variáveis do site com visualização clara */
+.light-style{
+    --CorDestaque: #403F3E;
+    --CorBackground: #BFBFBF;
+    --CorBase: #595959;
+    --CorAuxiliar: #BFBFBF;
+    --FontePesada: 600;
+    --FonteLeve: 500;
+    --logoRM: url(Images/SVG/logoRMcompleto-light.svg);
+    --RMlogosigla: url(Images/SVG/logoRM-light.svg);
+}
+/* variáveis gerais/universais */
 *{
     margin: 0px;
     padding: 0px;
     font-family: var(--Fonte);
     font-weight: var(--FonteLeve);
 }
-
 body{
     background-color: var(--CorBackground);
     margin: 7% auto;
     width: 1100px;
 }
-
 strong{
     color: var(--CorDestaque);
 }
 
 /* Barra de Navegação */
-
 #LogoRM{
     margin: 7px 5%;
     margin-right: auto;
     width: 100px;
 }
-
-
 #LogoRM:hover{
-    content: url(Images/SVG/logoRMcompleto.svg);
+    content: var(--logoRM);
     width: 308px;
     margin-top: 7px;
     margin-bottom: 3px;
 }
-
 #NavBarItens{
     margin-right: 5%;
 }
-
 #NavBar{
     border: 0px; 
     border-bottom-width: 1px;
     border-bottom-color: var(--CorDestaque);
     border-style: solid;
-    background-color: var(--CorBackground);
-    
+    background-color: var(--CorBackground);  
 }
-
 .nav-link{
     text-decoration: none;
     color: var(--CorDestaque);
@@ -65,7 +72,6 @@ strong{
     font-style: italic;
     padding-bottom: 5px;
 }
-
 .nav-link:hover{
     color: var(--CorBase);
     border: 0px; 
@@ -78,12 +84,10 @@ strong{
 }
 
 /* Conteúdo principal da página */
-
 #ConteudoPrincipal{
     max-width: 1100px;
     margin: auto;
 }
-
 #TelaInicial{
     margin-top: 200px;
     margin-bottom: 100px;
@@ -93,26 +97,36 @@ strong{
     animation-name: fadeIn;  
     animation-duration: 3s; 
 }
-
 #TelaInicial img{
     width: 100%;
 }
-
 #tituloTelaInicial{
     font-size: 2.75em;   
 }
-
 #FotoPessoal{
     margin: auto;
     margin-top: 100px;
 }
-
+.btns-estilo-pagina{
+    margin: 0;
+    border-radius: 10px;
+    border-width: 0px;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: var(--CorDestaque);
+    color: var(--CorAuxiliar);
+    font-weight: 700;
+    padding: 5px;
+    width: 10%;
+    border-radius: 20px;
+    border-color: var(--CorBackground);
+}
 .TituloDestaque{
     color: var(--CorDestaque);
     font-size: 2.8em;
     font-weight: var(--FontePesada);
 }
-
 .ConteudoTexto{
     color: var(--CorBase);
     font-size: 1.2em;
@@ -121,10 +135,9 @@ strong{
 }
 
 /* Seção Sobre Mim */
-
 #VejaMaisSobreMim{
     background-color: var(--CorDestaque);
-    color: var(--CorBase);
+    color: var(--CorAuxiliar);
     font-weight: 700;
     padding: 5px;
     width: 10%;
@@ -132,17 +145,15 @@ strong{
     border-color: var(--CorBackground);
     margin: 40px 45%;
 }
-
 #SobreMim{
     padding-top: 150px;
     padding-bottom: 100px;   
     }
 
 /* Seção Habilidades */
-
 #VejaMaisHabilidades{
     background-color: var(--CorDestaque);
-    color: var(--CorBase);
+    color: var(--CorAuxiliar);
     font-weight: 700;
     padding: 5px;
     width: 10%;
@@ -150,17 +161,15 @@ strong{
     border-color: var(--CorBackground);
     margin: 10px 45%;
 }
-
 #Habilidades{
     padding-top: 150px;
     padding-bottom: 100px;
 }
 
 /* Seção Projetos */
-
 #VejaMaisProjetos{
     background-color: var(--CorDestaque);
-    color: var(--CorBase);
+    color: var(--CorAuxiliar);
     font-weight: 700;
     padding: 5px;
     width: 10%;
@@ -168,25 +177,21 @@ strong{
     border-color: var(--CorBackground);
     margin: 40px 45%;
 }
-
 #Projetos{
     padding-top: 150px;
     padding-bottom: 100px;
     text-align: justify;
 }
-
 #ProjetosWrapper{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     gap: 3.3%;
 }
-
 .ImgProjetos{
     margin: 20px 0px;
     width: 100%;
 }
-
 .TituloProjeto{
     color: var(--CorDestaque);
     font-weight: var(--FontePesada);
@@ -194,27 +199,23 @@ strong{
     font-weight: 500;
     text-align: center;
 }
-
 .DescricaoProjeto{
     color: var(--CorBase);
     font-size: 0.9em;
     font-weight: 300;
     padding: 0px 20px;
 }
-
 .GridProjetosWrapped{
     transition: 0.7s ease-in-out;
     transform:  scale(1.0);
     position: relative;
 }
-
 .GridProjetosEscondidosWrapped{
     transition: 0.7s ease-in-out;
     transform:  scale(1.0);
     position: relative;
     display: none;
 }
-
 .OverlayProjetoEmDesenvolvimento{
     position: absolute;
     bottom: 0;
@@ -226,9 +227,8 @@ strong{
     height: 95%;
     transition: .5s ease;
 }
-
 .TextoOverlay{
-    color: var(--CorBase);
+    color: var(--CorAuxiliar);
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -238,16 +238,13 @@ strong{
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
-
 .LinkProjeto{
     text-decoration: none;
 }
-
 .GridProjetosWrapped:hover, .GridProjetosEscondidosWrapped:hover{
     transition: 0.7s ease-in-out;
     transform:  scale(1.05);
 }
-
 .GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
 .GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
 {
@@ -255,72 +252,60 @@ strong{
 }
 
 /* Seção Contatos */
-
 #Contato{
     padding-top: 150px;
     padding-bottom: 150px;
     margin: auto;
 }
-
 #Contato nav{
     text-align: center;
 }
-
 .LogosContatos{
     display: inline-block;
     margin: 100px 5%;    
     transition: 0.5s ease-in-out;
     transform:  scale(1.0);
 }
-
 .LogosContatos img{
     width: 70px;   
     padding-bottom: 10px;
 }
-
 .LogosContatos .LogoContatoTitulo{
     color: var(--CorDestaque);
     font-size: 1em;
     padding-top: 10px;
 }
-
 .popover{
     border-radius: 10px 0px 10px 0px;
     border-width: 1px;
     background: var(--CorBackground);
     color: var(--CorDestaque);
 }
-
 .popover-header{
     background-color: var(--CorDestaque);
-    color: var(--CorBase);
+    color: var(--CorAuxiliar);
     border-radius: 10px 0px 0px 0px;
     font-size: larger;
 }
-
 .popover-header::before{
     display: none !important;
 }
-
 .popover-body{
     background-color: var(--CorBase);
     color: var(--CorBackground);
     border-radius: 0px 0px 10px 0px;
     font-size: medium;    
 }
-
 .popover-arrow{
     display: none !important;
 
 }
-
 .LogosContatos:hover{
     transition: 0.5s ease-in-out;
     transform:  scale(1.2);
 }
 
 /* Animações */
-
 @keyframes fadeIn{
     0%{
         opacity: 0;
@@ -329,48 +314,39 @@ strong{
         opacity: 100;
     }
 }
-
 [data-animation] {
     opacity: 0;
     transition: 1s;
 }
-
 [data-animation="down"] {
     transform: translate3d(0, -100%, 0);
 }
-
 [data-animation="up"] {
     transform: translate3d(0, 100%, 0);
     transition: 1.5s;
 }
-
 [data-animation="left"] {
     transform: translate3d(-100%, 0, 0);
     transition: 1.5s;
 }
-
 [data-animation="right"] {
     transform: translate3d(50px ,0 ,0);
     transition: 1.5s;
 }
-
 [data-animation="in"] {
     opacity: 1;
 }
-
 [data-animation="zoomOut"] {
     opacity: 1;
     transform: scale(0.75);
     transition: 1.5s;
 }
-  
 [data-animation].animate {
     opacity: 1;
     transform: translate3d(0 ,0 ,0);
 }
 
 /* MediaQuerry */
-
 @media only screen and (max-width: 1120px) and (min-width: 900px) {
     body{
         width: 900px;
@@ -400,6 +376,9 @@ strong{
         margin: auto;
         padding: 10px;
     }
+    .btns-estilo-pagina{
+        width: 12%;
+    }
     .ImgProjetos{
         margin: 20px 0px;
         width: 100%;
@@ -408,7 +387,6 @@ strong{
         transform: translate3d(-100%, 0, 0);
         transition: 1.5s;
     }
-
 }
 
 @media only screen and (max-width: 899px) and (min-width: 630px){
@@ -427,7 +405,7 @@ strong{
         max-width: 300px;
     }
     #LogoRM:hover{
-        content: url(Images/SVG/logoRM.svg);
+        content: var(--RMlogosigla);
         margin: 7px 5%;
         margin-right: auto;
         width: 100px;
@@ -455,6 +433,9 @@ strong{
         text-align: justify;
         padding: 15px;  
     }
+    .btns-estilo-pagina{
+        width: 15%;
+    }
     .ImgProjetos{
         margin: 20px 0px;
         max-width: 100%;
@@ -476,10 +457,8 @@ strong{
 }
 
 @media only screen and (max-width: 629px) and (min-width: 350px){
-     
     body{
         width: 350px;
-        
     }
     #ConteudoPrincipal{
         max-width: 350px;
@@ -498,17 +477,18 @@ strong{
     #LogoRM{
         display: block;
         margin: 10px auto;
-        content: url(Images/SVG/logoRMcompleto.svg);
+        content: var(--logoRM);
         width: 300px;
     }
     #LogoRM:hover{
         display: block;
         margin: 10px auto;
-        content: url(Images/SVG/logoRMcompleto.svg);
+        content: var(--logoRM);
         width: 300px;
     }
     #NavBar{
         display: block;
+        z-index: 1;
     }
     #NavBarItens{
         margin: 0px;
@@ -550,6 +530,12 @@ strong{
         text-align: justify;
         padding: 10px 0px;  
     }
+    .btns-estilo-pagina{
+        top: 120px;
+        width: 20%;
+        font-size: 0.7em;
+        z-index: 2;
+    }
     .ImgProjetos{
         margin: 20px auto;
         max-width: 100%;
@@ -573,7 +559,6 @@ strong{
     }
 }
 @media only screen and (max-width: 349px){
-     
     body{
         width: 280px;
         
@@ -595,17 +580,18 @@ strong{
     #LogoRM{
         display: block;
         margin: 10px auto;
-        content: url(Images/SVG/logoRMcompleto.svg);
+        content: var(--logoRM);
         width: 280px;
     }
     #LogoRM:hover{
         display: block;
         margin: 10px auto;
-        content: url(Images/SVG/logoRMcompleto.svg);
+        content: var(--logoRM);
         width: 300px;
     }
     #NavBar{
         display: block;
+        z-index: 1;
     }
     #NavBarItens{
         margin: 0px;
@@ -646,6 +632,13 @@ strong{
         font-size: 1em;
         text-align: justify;
         padding: 10px 0px;  
+    }
+    .btns-estilo-pagina{
+        top: 110px;
+        right: 5px;
+        width: 20%;
+        font-size: 3vw;
+        z-index: 2;
     }
     .ImgProjetos{
         margin: 20px auto;

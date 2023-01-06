@@ -21,7 +21,7 @@
 
     <title>Portfolio</title>
 </head>
-<body>
+<body class="dark-style">
     <header class="container-sm"> <!-- Cabeçalho barra de navegação -->
         
         <nav class="navbar navbar-expand-sm fixed-top" id="NavBar"> <!-- Barra de navegação com todos os links das seções do portfolio -->
@@ -43,6 +43,11 @@
 
     <main id="ConteudoPrincipal" class="container-sm">
 
+        <div> <!-- Botão para mudar a visualização do site entre escuro ou claro -->
+            <input type="button" value="light mode" id="btn-tela-clara" class="btns-estilo-pagina">
+            <input type="button" value="dark mode" id="btn-tela-escura" class="btns-estilo-pagina" style="display: none;">
+        </div>
+
         <section id="TelaInicial"> <!-- Seção de conteúdos da tela inicial -->
 
             <div> <!-- Empacotador do Grid texto-imagem -->
@@ -57,7 +62,7 @@
         <section id="SobreMim" data-animation="left"> <!-- Seção de conteudos da aba "sobre mim" -->
 
             <h1 class="TituloDestaque">{Sobre mim}</h1>
-            <p class="ConteudoTexto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum laudantium quod cupiditate hic ducimus molestiae, expedita nam dicta quisquam dolor quibusdam porro velit corporis quidem voluptatum illo atque nobis? Consectetur sequi aspernatur, autem dolorem illum nesciunt quidem maxime impedit earum inventore dicta repellendus totam atque porro aperiam repellat reiciendis laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas! Ipsa, velit, consectetur porro consequatur explicabo dolore alias doloremque blanditiis eius distinctio obcaecati id saepe, sequi omnis quas quae animi.</p>
+            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual, iniciei meu curso de nível superior em Agosto de 2022. <br> Comecei minha jornada como desenvolvedor nos primeiros meses de 2022, estudando de forma totalmente autônoma, desde então, me desenvolvi nas tecnologias voltadas para o Desenvolvimento Front-End.</p>
 
             <input type="button" id="VejaMaisSobreMim" value="Ver mais" onclick="carregarSM ()">  
 
@@ -66,7 +71,8 @@
         <section id="Habilidades" data-animation="right"> <!-- Seção de conteudos da aba "habilidades" -->
 
             <h1 class="TituloDestaque">{Habilidades}</h1>
-            <p class="ConteudoTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem alias amet in provident repellat illum corporis facilis excepturi, quos voluptatum porro nam dolores quisquam recusandae exercitationem aliquam labore mollitia ratione. Quos, possimus molestias! Numquam tenetur debitis, odit, praesentium dolores sequi tempore rerum consequatur minima, quas nisi expedita necessitatibus molestias modi ratione ducimus ea vero dicta quidem unde fugit sunt? Suscipit optio eaque consequatur quos impedit explicabo, voluptas enim libero beatae quis saepe tenetur in cupiditate aut commodi ab odio dignissimos blanditiis. Vitae voluptatum doloremque dolores, quibusdam labore nam dolorum dignissimos cum fuga magnam asperiores vero sunt dolore. Doloribus, maiores.</p>
+            <p class="ConteudoTexto"> Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong> e na biblioteca <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também possuo conhecimento básico em <strong>C#</strong>, <strong>C++ </strong>e <strong>PHP</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>.</p>
+            
             <input type="button" id="VejaMaisHabilidades" value="Ver mais">  
 
         </section>
@@ -158,27 +164,27 @@
             <nav>
 
                 <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="Localização" data-bs-content="Rua Marçal de Freitas, N° 348 - Santa Maria, Ibirité, Minas Gerais">
-                    <img src="Images/SVG/logoLocalizacao.svg" alt="Logo contato localização">
+                    <img src="Images/SVG/logoLocalizacao.svg" alt="Logo contato localização" id="imgLocalizacao">
                     <h3 class="LogoContatoTitulo">Localização</h3>
                 </div>
 
                 <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="Número e WhatsApp" data-bs-content="(31) 9 9846-5458">
-                    <img src="Images/SVG/logoTelefone.svg" alt="Logo contato telefone">
+                    <img src="Images/SVG/logoTelefone.svg" alt="Logo contato telefone" id="imgTelefone">
                     <h3 class="LogoContatoTitulo">Telefone</h3>
                 </div>
 
                 <div class="LogosContatos"  data-animation="left"data-bs-toggle="popover" data-bs-placement="bottom" title="E-mail Profissional" data-bs-content="rendrykimelo.pro@gmail.com">
-                    <img src="Images/SVG/logoEmail.svg" alt="Logo contato E-mail">
+                    <img src="Images/SVG/logoEmail.svg" alt="Logo contato E-mail" id="imgEmail">
                     <h3 class="LogoContatoTitulo">E-mail</h3>
                 </div>
 
                 <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="GitHub" data-bs-content="github.com/Rendryki">
-                    <img src="Images/SVG/logoGitHub.svg" alt="Logo contato GitHub">
+                    <img src="Images/SVG/logoGitHub.svg" alt="Logo contato GitHub" id="imgGitHub">
                     <h3 class="LogoContatoTitulo">GitHub</h3>
                 </div>
 
                 <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="LinkedIn" data-bs-content="linkedin.com/in/rendryki-melo/">
-                    <img src="Images/SVG/logoLinkedIn.svg" alt="Logo contato LinkedIn">
+                    <img src="Images/SVG/logoLinkedIn.svg" alt="Logo contato LinkedIn" id="imgLinkedIn">
                     <h3 class="LogoContatoTitulo">LinkedIn</h3>
                 </div>
 
