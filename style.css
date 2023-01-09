@@ -148,7 +148,14 @@ strong{
 #SobreMim{
     padding-top: 150px;
     padding-bottom: 100px;   
-    }
+}
+#VejaMaisSobreMim:hover{
+    background-color: var(--CorBase);
+    color: var(--CorBackground);
+    border-color: var(--CorDestaque);
+    border-style: solid;
+    transition: 0.5s ease-in-out;
+}
 
 /* Seção Habilidades */
 #VejaMaisHabilidades{
@@ -165,6 +172,33 @@ strong{
     padding-top: 150px;
     padding-bottom: 100px;
 }
+#VejaMaisHabilidades:hover{
+    background-color: var(--CorBase);
+    color: var(--CorBackground);
+    border-color: var(--CorDestaque);
+    border-style: solid;
+    transition: 0.5s ease-in-out;
+}
+.progress{
+    margin: 0px 20px 30px 20px;
+    background-color: var(--CorBackground);
+    border-color: var(--CorDestaque);
+    border-width: 1px;
+    border-style: solid;
+    height: 7px;
+}
+.progress-bar{
+    background-color: var(--CorDestaque);
+}
+.progress-titulo{
+    color: var(--CorDestaque);
+    font-size: 1vw;
+    font-weight: var(--FontePesada);
+    margin: 20px 20px 10px;
+}
+.linkPDF{
+    text-decoration: none;
+}
 
 /* Seção Projetos */
 #VejaMaisProjetos{
@@ -175,7 +209,7 @@ strong{
     width: 10%;
     border-radius: 20px;
     border-color: var(--CorBackground);
-    margin: 50px 45%;
+    margin: 80px 45% 50px 45%;
 }
 #Projetos{
     padding-top: 150px;
@@ -184,15 +218,26 @@ strong{
 }
 #ProjetosWrapper{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32% ;
     grid-template-rows: auto auto;
-    gap: 3.3%;
+    align-content: center;
+    gap: 10px;  
 }
 .ImgProjetos{
     margin: 20px 0px;
     width: 100%;
     height: 80%;
     max-height: 195px;
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.363);
+}
+.ImgProjetosEmBreve{
+    margin: 20px 0px;
+    background-image: url(Images/SVG/imgEmpty.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 64%;
     border-radius: 10px;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.363);
 }
@@ -209,19 +254,17 @@ strong{
     font-weight: 300;
     padding: 0px 20px;
 }
-.GridProjetosWrapped{
+.GridProjetosWrapped, .GridProjetosEscondidosWrapped{
     transition: 0.7s ease-in-out;
     transform:  scale(1.0);
     position: relative;
 }
 .GridProjetosEscondidosWrapped{
-    transition: 0.7s ease-in-out;
-    transform:  scale(1.0);
-    position: relative;
     display: none;
 }
 .OverlayProjetoEmDesenvolvimento{
     position: absolute;
+    top: 10px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -245,20 +288,29 @@ strong{
 .LinkProjeto{
     text-decoration: none;
 }
+#VejaMaisProjetos:hover{
+    background-color: var(--CorBase);
+    color: var(--CorBackground);
+    border-color: var(--CorDestaque);
+    border-style: solid;
+    transition: 0.5s ease-in-out;
+}
 .GridProjetosWrapped:hover, .GridProjetosEscondidosWrapped:hover{
     transition: 0.7s ease-in-out;
     transform:  scale(1.05);
 }
 .GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
-.GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
-{
+.GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento{
     width: 100%;
+    height: 350px;
+    top: 10px;
+    position: absolute;
 }
 
 /* Seção Contatos */
 #Contato{
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     margin: auto;
 }
 #Contato nav{
@@ -307,6 +359,50 @@ strong{
 .LogosContatos:hover{
     transition: 0.5s ease-in-out;
     transform:  scale(1.2);
+}
+
+/* Seção Modals Projetos */
+.modal-content{
+    background-color: var(--CorBackground);
+}
+.modal-title{
+    color: var(--CorDestaque); 
+    font-size: 2vw; 
+}
+.btn-modal-sair{
+    color: var(--CorDestaque);
+    background-color: var(--CorBackground);
+    border-width: 0px;
+    font-size: 30px;
+    font-family: var(--FonteTipo);
+    font-weight: var(--FontePesada);
+}
+.btn-modal-sair:hover{
+    color: var(--CorAuxiliar);
+}
+.modal-header ,.modal-footer{
+    border-color: var(--CorDestaque);
+}
+.modal-body{
+    color: var(--CorBase);
+}
+.btn-modal{
+    background-color: var(--CorDestaque);
+    color: var(--CorAuxiliar);
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border-color: var(--CorBackground);
+    text-decoration: none;
+    border-style: none;
+}
+.btn-modal:hover{
+    background-color: var(--CorAuxiliar);
+    color: var(--CorDestaque);
+    border-color: var(--CorDestaque);
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.5s ease-in-out;
 }
 
 /* Animações */
@@ -385,6 +481,8 @@ strong{
     #ProjetosWrapper{
         margin: auto;
         padding: 10px;
+        grid-template-columns: 33% 33% 33% ;
+        gap: 1%;
     }
     .btns-estilo-pagina{
         width: 12%;
@@ -392,7 +490,10 @@ strong{
     .ImgProjetos{
         margin: 20px 0px;
         width: 100%;
-        height: 60%;
+        height: 50%;
+    }
+    .ImgProjetosEmBreve{
+        height: 50%;  
     }
     [data-animation="right"] {
         transform: translate3d(-100%, 0, 0);
@@ -423,8 +524,8 @@ strong{
     }
     #ProjetosWrapper{
         display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 3.3%;
+        grid-template-columns: 33% 33% 33% ;
+        gap: 1%;
     }
     #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
@@ -456,7 +557,10 @@ strong{
     .ImgProjetos{
         margin: 20px 0px;
         max-width: 100%;
-        height: 50%;
+        height: 40%;
+    }
+    .ImgProjetosEmBreve{
+        height: 40%;
     }
     .TituloProjeto{
         font-size: 1.7em;
@@ -519,7 +623,6 @@ strong{
     #ProjetosWrapper{
         display: grid;
         grid-template-columns: 100%;
-
     }
     #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
@@ -548,6 +651,13 @@ strong{
         text-align: justify;
         padding: 10px 0px;  
     }
+    .progress{
+        margin: 0px 0px 30px 0px;
+    }
+    .progress-titulo{
+        font-size: 3vw;
+        margin: 20px 0px 10px;
+    }
     .btns-estilo-pagina{
         top: 120px;
         width: 20%;
@@ -561,8 +671,22 @@ strong{
         align-items: center;
         justify-content: center;
     }
+    .ImgProjetosEmBreve{
+        height: 200px;
+    }
     .TituloProjeto{
         font-size: 1.5em;
+    }
+    .GridProjetosWrapped{
+        margin-top: 50px;
+        top: -50px;
+    }
+    .GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
+    .GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
+    {
+        width: 100%;
+        height: 340px;
+        top: 0px;
     }
     .LogosContatos{
         margin: 40px 10% 10px;    
@@ -621,7 +745,6 @@ strong{
     #ProjetosWrapper{
         display: grid;
         grid-template-columns: 100%;
-
     }
      #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
@@ -650,6 +773,13 @@ strong{
         text-align: justify;
         padding: 10px 0px;  
     }
+    .progress{
+        margin: 0px 0px 30px 0px;
+    }
+    .progress-titulo{
+        font-size: 4vw;
+        margin: 20px 0px 10px;
+    }
     .btns-estilo-pagina{
         top: 110px;
         right: 5px;
@@ -664,6 +794,21 @@ strong{
         display: block;
         align-items: center;
         justify-content: center;
+    }
+    .ImgProjetosEmBreve{
+        height: 150px;
+    }
+    .GridProjetosWrapped{
+        margin-top: 50px;
+        top: -50px;
+        font-size: 0.9em;
+    }
+    .GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
+    .GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
+    {
+        width: 100%;
+        height: 330px;
+        top: 10px;
     }
     .LogosContatos{
         margin: 40px 10% 10px;    

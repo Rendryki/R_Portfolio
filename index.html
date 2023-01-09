@@ -72,6 +72,7 @@
 
             <h1 class="TituloDestaque">{Habilidades}</h1>
             <p class="ConteudoTexto"> Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong> e na biblioteca Front-End <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também possuo conhecimento básico em <strong>C#</strong>, <strong>C++</strong> e <strong>PHP</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>.</p>
+            <a href="Images/PDF/Currículo_RendrykiMelo.pdf" download="Images/PDF/Currículo_RendrykiMelo.pdf" class="ConteudoTexto linkPDF"><strong>Baixar Currículo</strong></a>
             
             <input type="button" id="VejaMaisHabilidades" value="Ver mais">  
 
@@ -83,48 +84,35 @@
 
             <div id="ProjetosWrapper" data-animation="right">
 
-                <div class="GridProjetosWrapped"> 
-                    <div class="OverlayProjetoEmDesenvolvimento">
-                        <p class="TextoOverlay">Em Breve</p>
-                    </div>
-                    <a href="#Projetos" class="LinkProjeto">
+                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalViagens"> 
+                    <a href="#" class="LinkProjeto">
                         <img src="Images/JPG/img-projeto-viagens.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Em Breve</h2>
-                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                        <h2 class="TituloProjeto">Viagens.com</h2>
+                        <p class="DescricaoProjeto">Template para site comercial de uma agência de viagens. Desenvolvido através de HTML, CSS e JavaScript, além da biblioteca Bootstrap.</p>
                     </a>
                 </div>
 
-                <div class="GridProjetosWrapped"> 
-                    <div class="OverlayProjetoEmDesenvolvimento">
-                        <p class="TextoOverlay">Em Breve</p>
-                    </div>
+                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalUrna"> 
                     <a href="#Projetos" class="LinkProjeto">
-                        <img src="Images/JPG/img-projeto-validador-de-login.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Em Breve</h2>
-                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                        <img src="Images/JPG/img-projeto-urna-eletronica.JPG" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Urna eletrônica</h2>
+                        <p class="DescricaoProjeto">Urna eletrônica com salvamento de variáveis por meio do LocalStorage. Desenvolvido através de HTML, CSS e JavaScript.</p>
                     </a>
                 </div>
 
-                <div class="GridProjetosWrapped"> 
-                    <div class="OverlayProjetoEmDesenvolvimento">
-                        <p class="TextoOverlay">Em Breve</p>
-                    </div>
-                    <a href="#Projetos" class="LinkProjeto">
+                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalToDo"> 
+                    <a href="#" class="LinkProjeto">
                         <img src="Images/JPG/img-projeto-lista-de-afazeres.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Em Breve</h2>
-                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                        <h2 class="TituloProjeto">ToDo</h2>
+                        <p class="DescricaoProjeto">Lista de Afazeres no estilo ToDo. Desenvolvido através de HTML, CSS e JavaScript.</p>
                     </a>
                 </div>
 
-                
-                <div class="GridProjetosEscondidosWrapped"> 
-                    <div class="OverlayProjetoEmDesenvolvimento">
-                        <p class="TextoOverlay">Em Breve</p>
-                    </div>
-                    <a href="#Projetos" class="LinkProjeto">
-                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Em Breve</h2>
-                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
+                <div class="GridProjetosEscondidosWrapped" data-bs-toggle="modal" data-bs-target="#modalValidador"> 
+                    <a href="#" class="LinkProjeto">
+                        <img src="Images/JPG/img-projeto-validador-de-login.JPG" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Cadastros</h2>
+                        <p class="DescricaoProjeto">Validador de cadastro e login de usuários. Desenvolvido através de HTML, CSS e JavaScript.</p>
                     </a>
                 </div>
 
@@ -133,8 +121,7 @@
                         <p class="TextoOverlay">Em Breve</p>
                     </div>
                     <a href="#Projetos" class="LinkProjeto">
-                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Em Breve</h2>
+                        <div class="ImgProjetosEmBreve"></div>                        <h2 class="TituloProjeto">Em Breve</h2>
                         <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
                     </a>
                 </div>
@@ -144,14 +131,12 @@
                         <p class="TextoOverlay">Em Breve</p>
                     </div>
                     <a href="#Projetos" class="LinkProjeto">
-                        <img src="Images/SVG/imgEmpty.svg" alt="" class="ImgProjetos">
+                        <div class="ImgProjetosEmBreve"></div>
                         <h2 class="TituloProjeto">Em Breve</h2>
                         <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
                     </a>
                 </div>
                 
-                
-
             </div>
             
             <input type="button" id="VejaMaisProjetos" value="Ver mais">  
@@ -187,9 +172,89 @@
                     <img src="Images/SVG/logoLinkedIn.svg" alt="Logo contato LinkedIn" id="imgLinkedIn">
                     <h3 class="LogoContatoTitulo">LinkedIn</h3>
                 </div>
-
+                
             </nav>
 
+        </section>
+
+        <section id="ModalsProjetos"> <!-- Seção de modals escondidas referentes a aba "projetos" -->
+            <div class="modal fade" id="modalViagens" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Viagens.com</h5>
+                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Este projeto foi desenvolvido a fim de criar um template básico para um site comercial de uma agência de viagens e passagens aéreas. Foi desenvolvido através das técnologias HTML, CSS e JavaScript, além da biblioteca Front-End Bootstrap.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/Rendryki/Viagens.com" target="_blank" class="btn-modal">Ver no GitHub</a>
+                        <a href="https://rendryki.github.io/Viagens.com/" target="_blank" class="btn-modal">Ver página web</a>
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalValidador" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Validador de Cadastro</h5>
+                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Este projeto foi desenvolvido a fim de criar um validador de Cadastro e Login de usuários, com nome de usuário, senha e e-mail. Por se tratar de um projeto simples, não existe nenhuma forma de armazenamento de dados até o momento.</p>
+                        <p>Foi desenvolvido através das técnologias HTML, CSS e JavaScript.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/Rendryki/Validador-de-Cadastro-e-Login" target="_blank" class="btn-modal">Ver no GitHub</a>
+                        <a href="https://rendryki.github.io/Validador-de-Cadastro-e-Login/" target="_blank" class="btn-modal">Ver página web</a>
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalToDo" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ToDo</h5>
+                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Este projeto foi desenvolvido a fim de criar uma lista de afazeres personalizada pelo usuário, com opção de adcionar e remover tarefas. Foram utilizadas as técnologias Front-End: HTML, CSS e JavaScript.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/Rendryki/Lista-de-Afazeres" target="_blank" class="btn-modal">Ver no GitHub</a>
+                        <a href="https://rendryki.github.io/Lista-de-Afazeres/" target="_blank" class="btn-modal">Ver página web</a>
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalUrna" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ToDo</h5>
+                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Este projeto foi desenvolvido a fim de criar uma urna eletrônica para votação. O funcionamento desta urna ocorre através de ferramentas de inserção de votos pelo usuário, contagem dos votos e armazenamento a longo prazo dos dados através do LocalStorage do navegador do usuário. A sessão de votação pode ser finalizada e os dados resetados a qualquer momento pelo usuário administrador.</p>
+                        <p>Foram utilizadas as técnologias Front-End: HTML, CSS e JavaScript. Também foi utilizado a biblioteca Bootstrap.</p>    
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/Rendryki/Urna-Eletronica" target="_blank" class="btn-modal">Ver no GitHub</a>
+                        <a href="https://rendryki.github.io/Urna-Eletronica/HTML/PaginaInicial.html" target="_blank" class="btn-modal">Ver página web</a>
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
     </main>

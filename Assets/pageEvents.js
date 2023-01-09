@@ -1,7 +1,7 @@
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
-        }) // bootstrap popover contatos
+        }) // bootstrap popover contatos     
 
 const item = document.querySelectorAll("[data-animation]");
 const animeScroll = () => { // função carregar animações ao scroll down da página
@@ -58,7 +58,49 @@ document.getElementById("VejaMaisSobreMim").addEventListener("click", () => { //
 });
 
 document.getElementById("VejaMaisHabilidades").addEventListener("click", () => { // texto complementar "habilidades"
-    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> ";
+    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> Meu conhecimentos sobre as técnologias Front-End é de nível avançado, domino plenamente a biblioteca Bootstrap e estou buscando ampliar meu nível de conhecimento na biblioteca <strong>React</strong>. Além disso, busco me desenvolver nas tecnologias Mobile <strong>React Native</strong> e <strong>Flutter</strong>";
+
+    const barrasProgresso = document.createElement("div"); // criar div conteúdo complementar e barras de progresso do Bootstrap
+    barrasProgresso.className = "BarrasProgresso";
+    barrasProgresso.innerHTML = `<h3 class="progress-titulo">HTML e CSS</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:98%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">Bootstrap</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:95%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">JavaScript</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:75%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">React</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:50%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">PHP</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:50%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">C++ e C#</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:40%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">React Native e Flutter</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:15%;"></div>
+                                </div>`;
+    barrasProgresso.style.marginTop = "50px";
+    document.getElementById("Habilidades").appendChild(barrasProgresso); // append barras de progresso à página
 
     document.getElementById("VejaMaisHabilidades").style.display = "none";
 });
+
+document.getElementById("VejaMaisProjetos").addEventListener("click", () => { // conteúdo complementar "projetos"
+    const projetosEscondidos = document.querySelectorAll(".GridProjetosEscondidosWrapped");
+    projetosEscondidos.forEach((e) => { // mudar a classe de cada ítem escondido selecionado;
+        e.className = "GridProjetosWrapped";
+        e.style.marginTop = "50px";
+    });
+    document.getElementById("VejaMaisProjetos").style.display = "none";
+})
