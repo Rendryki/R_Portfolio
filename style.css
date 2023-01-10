@@ -695,6 +695,9 @@ strong{
         width: 70px;   
         padding-bottom: 10px;
     }
+    .modal-title{
+        font-size: 4vw; 
+    }
     [data-animation="right"] {
         transform: translate3d(-100%, 0, 0);
         transition: 1.5s;
@@ -816,6 +819,9 @@ strong{
     .LogosContatos img{
         width: 70px;   
         padding-bottom: 10px;
+    }
+    .modal-title{
+        font-size: 5vw; 
     }
     [data-animation="right"] {
         transform: translate3d(-100%, 0, 0);

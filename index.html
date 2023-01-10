@@ -84,6 +84,14 @@
 
             <div id="ProjetosWrapper" data-animation="right">
 
+                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalNotSoFake"> 
+                    <a href="#Projetos" class="LinkProjeto">
+                        <img src="Images/JPG/img-projeto-not-so-fake.JPG" alt="" class="ImgProjetos">
+                        <h2 class="TituloProjeto">Not So Fake</h2>
+                        <p class="DescricaoProjeto">Aplicação Web sobre o combate as Fake News. Desenvolvido academicamente no ambiente da PUC Minas Virtual atrávés de HTML, CSS, JavaScript e biblioteca Bootstrap.</p>
+                    </a>
+                </div>
+
                 <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalViagens"> 
                     <a href="#" class="LinkProjeto">
                         <img src="Images/JPG/img-projeto-viagens.JPG" alt="" class="ImgProjetos">
@@ -100,7 +108,7 @@
                     </a>
                 </div>
 
-                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalToDo"> 
+                <div class="GridProjetosEscondidosWrapped" data-bs-toggle="modal" data-bs-target="#modalToDo"> 
                     <a href="#" class="LinkProjeto">
                         <img src="Images/JPG/img-projeto-lista-de-afazeres.JPG" alt="" class="ImgProjetos">
                         <h2 class="TituloProjeto">ToDo</h2>
@@ -113,16 +121,6 @@
                         <img src="Images/JPG/img-projeto-validador-de-login.JPG" alt="" class="ImgProjetos">
                         <h2 class="TituloProjeto">Cadastros</h2>
                         <p class="DescricaoProjeto">Validador de cadastro e login de usuários. Desenvolvido através de HTML, CSS e JavaScript.</p>
-                    </a>
-                </div>
-
-                <div class="GridProjetosEscondidosWrapped"> 
-                    <div class="OverlayProjetoEmDesenvolvimento">
-                        <p class="TextoOverlay">Em Breve</p>
-                    </div>
-                    <a href="#Projetos" class="LinkProjeto">
-                        <div class="ImgProjetosEmBreve"></div>                        <h2 class="TituloProjeto">Em Breve</h2>
-                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
                     </a>
                 </div>
 
@@ -178,6 +176,26 @@
         </section>
 
         <section id="ModalsProjetos"> <!-- Seção de modals escondidas referentes a aba "projetos" -->
+            <div class="modal fade" id="modalNotSoFake" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Not So Fake</h5>
+                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Este projeto foi desenvolvido a fim de criar uma aplicação web com o objetivo de combater os malefícios causados pela disseminação de notícias falsas. As principais ferramentas disponíveis são: Blog estático informativo sobre as Fake News, Feed RSS que reúne notícias de fontes específicas e Buscador de notícias disponibilizado pelo Google API com filtro de resultados de fontes específicas pré definidas.</p>
+                        <p>Foi desenvolvido através das técnologias HTML, CSS e JavaScript, além da biblioteca Front-End Bootstrap.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/Rendryki/projeto-aplicacao-web-fake-news-PUC-Virtual" target="_blank" class="btn-modal">Ver no GitHub</a>
+                        <a href="https://rendryki.github.io/projeto-aplicacao-web-fake-news-PUC-Virtual/src/html/logged_in/in_Home.html" target="_blank" class="btn-modal">Ver página web</a>
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
             <div class="modal fade" id="modalViagens" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
