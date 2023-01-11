@@ -52,7 +52,7 @@
 
             <div> <!-- Empacotador do Grid texto-imagem -->
                 <h1 class="TituloDestaque" id="tituloTelaInicial">{Desenvolvedor Front-End}</h1>
-                <p class="ConteudoTexto">Olá, Meu nome é <strong>Rendryki Melo</strong>, sou um jovem estudante de TI, atualmente estou focando meus estudos em aprender mais sobre <strong>Desenvolvimento Front-End</strong>. Tive meu primeiro contato com Desenvolvimento em 2019, e em 2022 resolvi retomar esse contato de uma vez por todas!<br> Estou em busca de oportunidades para desenvolver meus conhecimentos teóricos e práticos e me tornar um <strong>Dev Front-End</strong>!</p>
+                <p class="ConteudoTexto">Olá, Meu nome é <strong>Rendryki Melo</strong>, sou um jovem estudante de TI, atualmente estou focando meus estudos em aprender mais sobre as técnologias <strong>Front-End</strong>. Tive meu primeiro contato com Desenvolvimento em 2019, e em 2022 resolvi retomar esse contato de uma vez por todas!<br> Estou em busca de oportunidades para ampliar meus conhecimentos teóricos e práticos e me tornar um <strong>Dev Front-End</strong>!</p>
             </div>
 
             <img src="Images/SVG/logoRM.svg" alt="Foto pessoal" id="FotoPessoal">
@@ -62,7 +62,7 @@
         <section id="SobreMim" data-animation="left"> <!-- Seção de conteudos da aba "sobre mim" -->
 
             <h1 class="TituloDestaque">{Sobre mim}</h1>
-            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual. Iniciei este curso de nível superior em Agosto de 2022. <br> Comecei minha jornada como desenvolvedor nos primeiros meses de 2022, estudando de forma autônoma, desde então, foquei nas tecnologias voltadas para o Desenvolvimento Front-End.</p>
+            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual. Iniciei este curso de nível superior em Agosto de 2022. <br> Comecei minha jornada como desenvolvedor nos primeiros meses de 2022, estudando de forma autônoma, desde então, foquei nas tecnologias Front-End.</p>
 
             <input type="button" id="VejaMaisSobreMim" value="Ver mais">  
 
@@ -73,6 +73,7 @@
             <h1 class="TituloDestaque">{Habilidades}</h1>
             <p class="ConteudoTexto"> Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong> e na biblioteca Front-End <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também possuo conhecimento básico em <strong>C#</strong>, <strong>C++</strong> e <strong>PHP</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>.</p>
             <a href="Images/PDF/Currículo_RendrykiMelo.pdf" download="Images/PDF/Currículo_RendrykiMelo.pdf" class="ConteudoTexto linkPDF"><strong>Baixar Currículo</strong></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#ModalBaixarCertificados" class="ConteudoTexto linkPDF" style="display: block;"><strong>Baixar Certificados</strong></a>
             
             <input type="button" id="VejaMaisHabilidades" value="Ver mais">  
 
@@ -176,6 +177,30 @@
         </section>
 
         <section id="ModalsProjetos"> <!-- Seção de modals escondidas referentes a aba "projetos" -->
+            <div id="ModalCertificados"> <!-- Modal específica dos links dos certificados da aba "habilidades" -->
+                <div class="modal fade" id="ModalBaixarCertificados" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Certificados</h5>
+                            <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <a href="Images/PDF/JavaScript_Básico-Certificado-+IFMG.pdf" class="CertificadosLinks" download="Images/PDF/JavaScript_Básico-Certificado-+IFMG.pdf">- JavaScript Básico, pelo +IFMG</a>
+                            <a href="Images/PDF/JavaScript_Avançado-Certificado-+IFMG.pdf" class="CertificadosLinks" download="Images/PDF/JavaScript_Avançado-Certificado-+IFMG.pdf">- JavaScript Avançado, pelo +IFMG</a>
+                            <a href="Images/PDF/Programador_Web_em_Tecnologias_Front-Certificado-+IFMG.pdf" class="CertificadosLinks" download="Images/PDF/Programador_Web_em_Tecnologias_Front-Certificado-+IFMG.pdf">- Programação Web em Tecnologias FrontEnd, pelo +IFMG</a>
+                            <a href="Images/PDF/Programação_Web_Avançado-Certificado-+IFMG.pdf" class="CertificadosLinks" download="Images/PDF/Programação_Web_Avançado-Certificado-+IFMG.pdf">- Programação Web Avançado, pelo +IFMG</a>
+                            <a href="Images/PDF/Web_Designer-Certificado-+IFMG.pdf" class="CertificadosLinks" download="Images/PDF/Web_Designer-Certificado-+IFMG.pdf">- Web Designer, pelo +IFMG</a>
+                            <a href="Images/PDF/Robótica_Educacional-Certificado-IFMG Ibirité.pdf" class="CertificadosLinks" download="Images/PDF/Robótica_Educacional-Certificado-IFMG Ibirité.pdf">- Robótica, pelo IFMG Ibirité</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="modal fade" id="modalNotSoFake" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">

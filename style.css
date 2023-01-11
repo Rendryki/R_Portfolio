@@ -199,6 +199,19 @@ strong{
 .linkPDF{
     text-decoration: none;
 }
+.CertificadosLinks{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: var(--FontePesada);
+    color: var(--CorDestaque);
+    display: block;
+    margin: 10px;
+}
+.CertificadosLinks:hover{
+    color: var(--CorBase);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
 
 /* Seção Projetos */
 #VejaMaisProjetos{
