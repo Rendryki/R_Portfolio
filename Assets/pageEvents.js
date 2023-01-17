@@ -58,7 +58,7 @@ document.getElementById("VejaMaisSobreMim").addEventListener("click", () => { //
 });
 
 document.getElementById("VejaMaisHabilidades").addEventListener("click", () => { // texto complementar "habilidades"
-    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> Meu conhecimentos sobre as técnologias Front-End é de nível avançado. Também estou buscando ampliar meu nível de conhecimento na biblioteca <strong>React</strong> e nas técnicas e habilidades voltadas ao <strong>Design Web</strong>, <strong>UX</strong> e <strong>UI</strong>. Além disso, pretendo me desenvolver nas tecnologias Mobile <strong>React Native</strong> e <strong>Flutter</strong>.";
+    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> Possuo conhecimentos sobre as técnologias Front-End. Também estou buscando ampliar meu nível de conhecimento na biblioteca <strong>React</strong> e nas técnicas e habilidades voltadas ao <strong>Design Web</strong>, <strong>UX</strong> e <strong>UI</strong>. Além disso, pretendo me desenvolver nas tecnologias Mobile <strong>React Native</strong> e <strong>Flutter</strong>.";
 
     const barrasProgresso = document.createElement("div"); // criar div conteúdo complementar e barras de progresso do Bootstrap
     barrasProgresso.className = "BarrasProgresso";
@@ -75,9 +75,13 @@ document.getElementById("VejaMaisHabilidades").addEventListener("click", () => {
                                 <div class="progress">
                                     <div class="progress-bar" style="width:75%;"></div>
                                 </div>
-                                <h3 class="progress-titulo">Design Web</h3>
+                                <h3 class="progress-titulo">JQuery</h3>
                                 <div class="progress">
-                                    <div class="progress-bar" style="width:60%;"></div>
+                                    <div class="progress-bar" style="width:70%;"></div>
+                                </div>
+                                <h3 class="progress-titulo">Design Web, UX e UI</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:55%;"></div>
                                 </div>
                                 <h3 class="progress-titulo">React</h3>
                                 <div class="progress">
@@ -85,7 +89,7 @@ document.getElementById("VejaMaisHabilidades").addEventListener("click", () => {
                                 </div>
                                 <h3 class="progress-titulo">PHP</h3>
                                 <div class="progress">
-                                    <div class="progress-bar" style="width:50%;"></div>
+                                    <div class="progress-bar" style="width:40%;"></div>
                                 </div>
                                 <h3 class="progress-titulo">C++ e C#</h3>
                                 <div class="progress">
