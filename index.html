@@ -62,7 +62,7 @@
         <section id="SobreMim" data-animation="left"> <!-- Seção de conteudos da aba "sobre mim" -->
 
             <h1 class="TituloDestaque">{Sobre mim}</h1>
-            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual. Iniciei este curso de nível superior em Agosto de 2022. <br> Comecei minha jornada como desenvolvedor nos primeiros meses de 2022, estudando de forma autônoma, desde então, foquei nas tecnologias Front-End.</p>
+            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual. Iniciei este curso de nível superior em Agosto de 2022. <br> Comecei meus estudos sobre Desenvolvimento FrontEnd em Maio de 2022, estudando de forma totalmente autônoma.</p>
 
             <input type="button" id="VejaMaisSobreMim" value="Ver mais">  
 
@@ -71,7 +71,7 @@
         <section id="Habilidades" data-animation="right"> <!-- Seção de conteudos da aba "habilidades" -->
 
             <h1 class="TituloDestaque">{Habilidades}</h1>
-            <p class="ConteudoTexto"> Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong>, na biblioteca Front-End <strong>Bootstrap</strong> e na biblioteca JavaScript <strong>JQuery</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também já tive contato com <strong>C#</strong>, <strong>C++</strong> e <strong>PHP</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>.</p>
+            <p class="ConteudoTexto"> Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong>, na biblioteca Front-End <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também já tive contato com <strong>C#</strong>, <strong>C++</strong>, <strong>PHP</strong> e <strong>Python</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>.</p>
             <a href="Images/PDF/Currículo_RendrykiMelo.pdf" download="Images/PDF/Currículo_RendrykiMelo.pdf" class="ConteudoTexto linkPDF"><strong>Baixar Currículo</strong></a>
             <a href="#" data-bs-toggle="modal" data-bs-target="#ModalBaixarCertificados" class="ConteudoTexto linkPDF" style="display: block;"><strong>Baixar Certificados</strong></a>
             
@@ -83,62 +83,11 @@
 
             <h1 class="TituloDestaque" data-animation="up">{Projetos}</h1>
 
-            <div id="ProjetosWrapper" data-animation="right">
-
-                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalNotSoFake"> 
-                    <a href="#Projetos" class="LinkProjeto">
-                        <img src="Images/JPG/img-projeto-not-so-fake.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Not So Fake</h2>
-                        <p class="DescricaoProjeto">Aplicação Web sobre o combate as Fake News. Desenvolvido academicamente no ambiente da PUC Minas Virtual atrávés de HTML, CSS, JavaScript e biblioteca Bootstrap.</p>
-                    </a>
-                </div>
-
-                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalViagens"> 
-                    <a href="#" class="LinkProjeto">
-                        <img src="Images/JPG/img-projeto-viagens.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Viagens.com</h2>
-                        <p class="DescricaoProjeto">Template para site comercial de uma agência de viagens. Desenvolvido através de HTML, CSS e JavaScript, além da biblioteca Bootstrap.</p>
-                    </a>
-                </div>
-
-                <div class="GridProjetosWrapped" data-bs-toggle="modal" data-bs-target="#modalUrna"> 
-                    <a href="#Projetos" class="LinkProjeto">
-                        <img src="Images/JPG/img-projeto-urna-eletronica.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Urna eletrônica</h2>
-                        <p class="DescricaoProjeto">Urna eletrônica com salvamento de variáveis por meio do LocalStorage. Desenvolvido através de HTML, CSS e JavaScript.</p>
-                    </a>
-                </div>
-
-                <div class="GridProjetosEscondidosWrapped" data-bs-toggle="modal" data-bs-target="#modalToDo"> 
-                    <a href="#" class="LinkProjeto">
-                        <img src="Images/JPG/img-projeto-lista-de-afazeres.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">ToDo</h2>
-                        <p class="DescricaoProjeto">Lista de Afazeres no estilo ToDo. Desenvolvido através de HTML, CSS e JavaScript.</p>
-                    </a>
-                </div>
-
-                <div class="GridProjetosEscondidosWrapped" data-bs-toggle="modal" data-bs-target="#modalValidador"> 
-                    <a href="#" class="LinkProjeto">
-                        <img src="Images/JPG/img-projeto-validador-de-login.JPG" alt="" class="ImgProjetos">
-                        <h2 class="TituloProjeto">Cadastros</h2>
-                        <p class="DescricaoProjeto">Validador de cadastro e login de usuários. Desenvolvido através de HTML, CSS, JavaScript e JQuery.</p>
-                    </a>
-                </div>
-
-                <div class="GridProjetosEscondidosWrapped"> 
-                    <div class="OverlayProjetoEmDesenvolvimento">
-                        <p class="TextoOverlay">Em Breve</p>
-                    </div>
-                    <a href="#Projetos" class="LinkProjeto">
-                        <div class="ImgProjetosEmBreve"></div>
-                        <h2 class="TituloProjeto">Em Breve</h2>
-                        <p class="DescricaoProjeto">Projeto em fase de desenvolvimento, em breve será concluído</p>
-                    </a>
-                </div>
-                
-            </div>
+                <ul id="ProjetosWrapper" data-animation="right">
+                    
+                </ul>
             
-            <input type="button" id="VejaMaisProjetos" value="Ver mais">  
+                <input type="button" id="VejaMaisProjetos" value="Ver mais">  
 
         </section>
 
@@ -176,8 +125,7 @@
 
         </section>
 
-        <section id="ModalsProjetos"> <!-- Seção de modals escondidas referentes a aba "projetos" -->
-            <div id="ModalCertificados"> <!-- Modal específica dos links dos certificados da aba "habilidades" -->
+        <section id="ModalCertificados"> <!-- Seção de modals escondidas referentes a aba "projetos" -->
                 <div class="modal fade" id="ModalBaixarCertificados" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
@@ -199,111 +147,12 @@
                       </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="modal fade" id="modalNotSoFake" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Not So Fake</h5>
-                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Este projeto foi desenvolvido a fim de criar uma aplicação web com o objetivo de combater os malefícios causados pela disseminação de notícias falsas. As principais ferramentas disponíveis são: Blog estático informativo sobre as Fake News, Feed RSS que reúne notícias de fontes específicas e Buscador de notícias disponibilizado pelo Google API com filtro de resultados de fontes específicas pré definidas.</p>
-                        <p>Foi desenvolvido através das técnologias HTML, CSS e JavaScript, além da biblioteca Front-End Bootstrap.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="https://github.com/Rendryki/projeto-aplicacao-web-fake-news-PUC-Virtual" target="_blank" class="btn-modal">Ver no GitHub</a>
-                        <a href="https://rendryki.github.io/projeto-aplicacao-web-fake-news-PUC-Virtual/src/html/logged_in/in_Home.html" target="_blank" class="btn-modal">Ver página web</a>
-                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            
-            <div class="modal fade" id="modalViagens" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Viagens.com</h5>
-                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Este projeto foi desenvolvido a fim de criar um template básico para um site comercial de uma agência de viagens e passagens aéreas. Foi desenvolvido através das técnologias HTML, CSS e JavaScript, além da biblioteca Front-End Bootstrap.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="https://github.com/Rendryki/Viagens.com" target="_blank" class="btn-modal">Ver no GitHub</a>
-                        <a href="https://rendryki.github.io/Viagens.com/" target="_blank" class="btn-modal">Ver página web</a>
-                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="modal fade" id="modalValidador" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Validador de Cadastro</h5>
-                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Este projeto foi desenvolvido a fim de criar um validador de Cadastro e Login de usuários, com nome de usuário, senha e e-mail. O armazenamento dos dados do usuário foi realizado de forma simples por meio de um Array básico.</p>
-                        <p>Foi desenvolvido através das técnologias HTML, CSS e JavaScript. Além também da biblioteca JQuery.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="https://github.com/Rendryki/Validador-de-Cadastro-e-Login" target="_blank" class="btn-modal">Ver no GitHub</a>
-                        <a href="https://rendryki.github.io/Validador-de-Cadastro-e-Login/" target="_blank" class="btn-modal">Ver página web</a>
-                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="modal fade" id="modalToDo" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">ToDo</h5>
-                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Este projeto foi desenvolvido a fim de criar uma lista de afazeres personalizada pelo usuário, com opção de adcionar e remover tarefas. Foram utilizadas as técnologias Front-End: HTML, CSS e JavaScript.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="https://github.com/Rendryki/Lista-de-Afazeres" target="_blank" class="btn-modal">Ver no GitHub</a>
-                        <a href="https://rendryki.github.io/Lista-de-Afazeres/" target="_blank" class="btn-modal">Ver página web</a>
-                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="modal fade" id="modalUrna" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Urna eletrônica</h5>
-                        <button type="button" class="btn-modal-sair" data-bs-dismiss="modal" aria-label="Close">X</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Este projeto foi desenvolvido a fim de criar uma urna eletrônica para votação. O funcionamento desta urna ocorre através de ferramentas de inserção de votos pelo usuário, contagem dos votos e armazenamento a longo prazo dos dados através do LocalStorage do navegador do usuário. A sessão de votação pode ser finalizada e os dados resetados a qualquer momento pelo usuário administrador.</p>
-                        <p>Foram utilizadas as técnologias Front-End: HTML, CSS e JavaScript. Também foi utilizado a biblioteca Bootstrap.</p>    
-                    </div>
-                    <div class="modal-footer">
-                        <a href="https://github.com/Rendryki/Urna-Eletronica" target="_blank" class="btn-modal">Ver no GitHub</a>
-                        <a href="https://rendryki.github.io/Urna-Eletronica/HTML/PaginaInicial.html" target="_blank" class="btn-modal">Ver página web</a>
-                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Sair</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
         </section>
 
     </main>
 
     <!-- Link JavaScript -->
+    <script src="Assets/GitHubAPIInfos.js"></script>
     <script src="Assets/pageEvents.js"></script>
-
 </body>
 </html>

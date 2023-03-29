@@ -58,58 +58,34 @@ document.getElementById("VejaMaisSobreMim").addEventListener("click", () => { //
 });
 
 document.getElementById("VejaMaisHabilidades").addEventListener("click", () => { // texto complementar "habilidades"
-    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> Possuo conhecimentos sobre as técnologias Front-End. Também estou buscando ampliar meu nível de conhecimento na biblioteca <strong>React</strong> e nas técnicas e habilidades voltadas ao <strong>Design Web</strong>, <strong>UX</strong> e <strong>UI</strong>. Além disso, pretendo me desenvolver nas tecnologias Mobile <strong>React Native</strong> e <strong>Flutter</strong>.";
+    document.querySelectorAll(".ConteudoTexto")[2].innerHTML += "<br> Possuo conhecimentos sobre as técnologias Front-End. Também estou buscando ampliar meu nível de conhecimento na biblioteca <strong>React</strong>. Além disso, pretendo me desenvolver na tecnologia Mobile <strong>React Native</strong>.";
 
-    const barrasProgresso = document.createElement("div"); // criar div conteúdo complementar e barras de progresso do Bootstrap
+    let barrasProgresso = document.createElement("div"); // criar div conteúdo complementar e barras de progresso do Bootstrap
     barrasProgresso.className = "BarrasProgresso";
-    barrasProgresso.innerHTML = `<h2 class="progress-titulo" style="font-size:20px;">Meus níveis de habilidade</h2>
-                                <h3 class="progress-titulo">HTML e CSS</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:98%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">Bootstrap</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:95%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">JavaScript</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:75%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">JQuery</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:70%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">Design Web, UX e UI</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:55%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">React</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:50%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">PHP</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:40%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">C++ e C#</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:40%;"></div>
-                                </div>
-                                <h3 class="progress-titulo">React Native e Flutter</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:15%;"></div>
-                                </div>`;
+    barrasProgresso.innerHTML = `<h2 class="progress-titulo" style="font-size:20px;">Meus níveis de habilidade</h2>`;
     barrasProgresso.style.marginTop = "50px";
+    fetch("./Assets/Habilidades.json", {method: 'GET'}).then(resp => resp.json()).then(resp => {
+        console.log(resp)
+        resp.forEach(e => {
+            function CarregarBarrasProgresso(){
+                return `<h3 class="progress-titulo">${e.Habilidades}</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:${e.Nivel}%;"></div>
+                        </div>`
+            }barrasProgresso.innerHTML += CarregarBarrasProgresso();
+        })
+    })
     document.getElementById("Habilidades").appendChild(barrasProgresso); // append barras de progresso à página
 
     document.getElementById("VejaMaisHabilidades").style.display = "none";
 });
 
 document.getElementById("VejaMaisProjetos").addEventListener("click", () => { // conteúdo complementar "projetos"
-    const projetosEscondidos = document.querySelectorAll(".GridProjetosEscondidosWrapped");
-    projetosEscondidos.forEach((e) => { // mudar a classe de cada ítem escondido selecionado;
-        e.className = "GridProjetosWrapped";
-        e.style.marginTop = "50px";
-    });
+    let cont = document.getElementById("ProjetosWrapper").children.length;
+
+    for(let i = 0; i < cont; i++){
+        document.getElementById("ProjetosWrapper").children[i].className = 'GridProjetosWrapped';
+    }
+
     document.getElementById("VejaMaisProjetos").style.display = "none";
-})
+});

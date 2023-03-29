@@ -1,0 +1,42 @@
+[
+    {
+        "Habilidades": "HTML e CSS", 
+        "Nivel": "98"
+    },
+    {
+        "Habilidades": "Bootstrap", 
+        "Nivel": "95"
+    },
+    {
+        "Habilidades": "JavaScript", 
+        "Nivel": "80"
+    },
+    {
+        "Habilidades": "React", 
+        "Nivel": "70"
+    },
+    {
+        "Habilidades": "Chakra-UI", 
+        "Nivel": "70"
+    },
+    {
+        "Habilidades": "JQuery", 
+        "Nivel": "70"
+    },
+    {
+        "Habilidades": "Design Web, UX e UI", 
+        "Nivel": "50"
+    },
+    {
+        "Habilidades": "PHP", 
+        "Nivel": "50"
+    },
+    {
+        "Habilidades": "C++ e C#", 
+        "Nivel": "40"
+    },
+    {
+        "Habilidades": "Python", 
+        "Nivel": "25"
+    }
+]

@@ -230,73 +230,48 @@ strong{
     text-align: justify;
 }
 #ProjetosWrapper{
-    display: grid;
-    grid-template-columns: 32% 32% 32% ;
-    grid-template-rows: auto auto;
-    align-content: center;
-    gap: 10px;  
-}
-.ImgProjetos{
-    margin: 20px 0px;
     width: 100%;
-    height: 80%;
-    max-height: 195px;
-    border-radius: 10px;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.363);
-}
-.ImgProjetosEmBreve{
-    margin: 20px 0px;
-    background-image: url(Images/SVG/imgEmpty.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 64%;
-    border-radius: 10px;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.363);
-}
-.TituloProjeto{
-    color: var(--CorDestaque);
-    font-weight: var(--FontePesada);
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-}
-.DescricaoProjeto{
-    color: var(--CorBase);
-    font-size: 0.9em;
-    font-weight: 300;
-    padding: 0px 20px;
+    margin: auto;
+    align-items: center;
+    padding: 0px;
 }
 .GridProjetosWrapped, .GridProjetosEscondidosWrapped{
+    height: 9vw;
+    background-color: var(--CorDestaque);
+    color: var(--CorBackground);
     transition: 0.7s ease-in-out;
     transform:  scale(1.0);
     position: relative;
+    list-style: none;
+    margin: 2vw;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--CorAuxiliar);
+}
+.projectCardInformation{
+    float: left;
+}
+.TituloProjeto{
+    font-size: 2vw;
+}
+.ProjectLanguage, .ProjectDate{
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: var(--FontePesada);
+    text-indent: 0.6vw;
+    margin: 0px;
+}
+.VerProjetoButton button{
+    float: right;
+    background-color: var(--CorBackground);
+    color: var(--CorDestaque);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--CorAuxiliar);
+    font-weight: var(--FontePesada);
 }
 .GridProjetosEscondidosWrapped{
     display: none;
-}
-.OverlayProjetoEmDesenvolvimento{
-    position: absolute;
-    top: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--CorDestaque);
-    overflow: hidden;
-    width: 0;
-    height: 95%;
-    transition: .5s ease;
-}
-.TextoOverlay{
-    color: var(--CorAuxiliar);
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
 }
 .LinkProjeto{
     text-decoration: none;
@@ -308,16 +283,13 @@ strong{
     border-style: solid;
     transition: 0.5s ease-in-out;
 }
+.VerProjetoButton button:hover{
+    background-color: var(--CorDestaque);
+    color: var(--CorBackground);
+}
 .GridProjetosWrapped:hover, .GridProjetosEscondidosWrapped:hover{
     transition: 0.7s ease-in-out;
-    transform:  scale(1.05);
-}
-.GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
-.GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento{
-    width: 100%;
-    height: 350px;
-    top: 10px;
-    position: absolute;
+    transform:  scale(1.03);
 }
 
 /* Seção Contatos */
@@ -535,11 +507,6 @@ strong{
         margin-right: auto;
         width: 100px;
     }
-    #ProjetosWrapper{
-        display: grid;
-        grid-template-columns: 33% 33% 33% ;
-        gap: 1%;
-    }
     #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
         width: 20%;
@@ -555,6 +522,24 @@ strong{
     #Contato, #Projetos, #SobreMim, #Habilidades{
         margin: auto;
     }
+    .GridProjetosWrapped, .GridProjetosEscondidosWrapped{
+        height: 14vw;
+        padding: 5px;
+        border-radius: 20px;
+        border: 2px solid var(--CorAuxiliar);
+    }
+    .TituloProjeto{
+        margin: 5px;
+        font-size: 1vw;
+    }
+    .ProjectLanguage, .ProjectDate{
+        margin: 0px 5px;
+        font-size: 1.8vw;
+    }
+    .VerProjetoButton button{
+        padding: 5px 10px;
+        font-size: 2vw;
+    }
     .TituloDestaque{
         font-size: 2.5em;
         margin: auto;
@@ -566,14 +551,6 @@ strong{
     }
     .btns-estilo-pagina{
         width: 15%;
-    }
-    .ImgProjetos{
-        margin: 20px 0px;
-        max-width: 100%;
-        height: 40%;
-    }
-    .ImgProjetosEmBreve{
-        height: 40%;
     }
     .TituloProjeto{
         font-size: 1.7em;
@@ -633,10 +610,6 @@ strong{
         padding-top: 150px;
         margin: auto;
     }
-    #ProjetosWrapper{
-        display: grid;
-        grid-template-columns: 100%;
-    }
     #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
         width: 30%;
@@ -646,6 +619,23 @@ strong{
     #VejaMaisProjetos{
         margin: 80px 34%;
         width: 30%;
+    }
+    .GridProjetosWrapped, .GridProjetosEscondidosWrapped{
+        height: 100%;
+    }
+    .projectCardInformation{
+        float: none;
+    }
+    .TituloProjeto{
+        font-size: 10px;
+    }
+    .ProjectLanguage, .ProjectDate{
+        font-size: 2vw;
+        margin: 10px;
+    }
+    .VerProjetoButton button{
+        float: none;
+        width: 100%;
     }
     .nav-link{
         font-size: 0.8em;
@@ -677,29 +667,8 @@ strong{
         font-size: 0.6em;
         z-index: 2;
     }
-    .ImgProjetos{
-        margin: 20px auto;
-        max-width: 100%;
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-    .ImgProjetosEmBreve{
-        height: 200px;
-    }
     .TituloProjeto{
         font-size: 1.5em;
-    }
-    .GridProjetosWrapped{
-        margin-top: 50px;
-        top: -50px;
-    }
-    .GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
-    .GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
-    {
-        width: 100%;
-        height: 340px;
-        top: 0px;
     }
     .LogosContatos{
         margin: 40px 10% 10px;    
@@ -758,10 +727,6 @@ strong{
         padding-top: 150px;
         margin: auto;
     }
-    #ProjetosWrapper{
-        display: grid;
-        grid-template-columns: 100%;
-    }
      #VejaMaisHabilidades, #VejaMaisSobreMim{
         padding: 5px;
         width: 30%;
@@ -803,28 +768,23 @@ strong{
         font-size: 2.5vw;
         z-index: 2;
     }
-    .ImgProjetos{
-        margin: 20px auto;
-        max-width: 100%;
-        height: 55%;
-        display: block;
-        align-items: center;
-        justify-content: center;
+    .GridProjetosWrapped, .GridProjetosEscondidosWrapped{
+        height: 100%;
     }
-    .ImgProjetosEmBreve{
-        height: 150px;
+    .projectCardInformation{
+        float: none;
     }
-    .GridProjetosWrapped{
-        margin-top: 50px;
-        top: -50px;
-        font-size: 0.9em;
+    .TituloProjeto{
+        font-size: 20px;
     }
-    .GridProjetosWrapped:hover .OverlayProjetoEmDesenvolvimento, 
-    .GridProjetosEscondidosWrapped:hover .OverlayProjetoEmDesenvolvimento
-    {
+    .ProjectLanguage, .ProjectDate{
+        font-size: 3vw;
+        margin: 10px;
+    }
+    .VerProjetoButton button{
+        float: none;
         width: 100%;
-        height: 330px;
-        top: 10px;
+        padding: 2px;
     }
     .LogosContatos{
         margin: 40px 10% 10px;    
