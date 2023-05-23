@@ -12,7 +12,7 @@ fetch("https://api.github.com/users/Rendryki/repos").then(response => response.j
                 creationDate: formatedCreationDate
             }
             ArrRepositories.push(repositoriesObject);
-        }else if(list.name === "NotSoFake"){
+        }else if(list.name === "R_Not_So_Fake"){
             let formatedCreationDate = list.created_at.substring(0, 10);
             let repositoriesObject = {
                 name : list.name,
