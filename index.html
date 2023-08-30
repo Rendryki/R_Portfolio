@@ -9,17 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Link AOS Library 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
-
     <!-- Link para Stylesheet CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Link Favicon -->
     <link rel="shortcut icon" href="Images/SVG/logoRM.svg" type="image/x-icon">
 
-    <title>Portfolio</title>
+    <title>Portfólio</title>
 </head>
 <body class="dark-style">
     <header class="container-sm"> <!-- Cabeçalho barra de navegação -->
@@ -52,17 +48,17 @@
 
             <div> <!-- Empacotador do Grid texto-imagem -->
                 <h1 class="TituloDestaque" id="tituloTelaInicial">{Desenvolvedor Front-End}</h1>
-                <p class="ConteudoTexto">Olá, Meu nome é <strong>Rendryki Melo</strong>, sou um jovem estudante de TI, atualmente estou focando meus estudos em aprender mais sobre as técnologias <strong>Front-End</strong>. Tive meu primeiro contato com Desenvolvimento em 2019, e em 2022 resolvi retomar esse contato de uma vez por todas!<br> Estou em busca de oportunidades para ampliar meus conhecimentos teóricos e práticos e me tornar um <strong>Dev Front-End</strong>!</p>
+                <p class="ConteudoTexto">Olá, Meu nome é <strong>Rendryki Melo</strong>, sou um jovem estudante de TI e acadêmico de Sistemas de Informação. Estou me desenvolvendo em algumas das principais tecnologias <strong>Front-End</strong>, mas também aprendendo um pouco sobre <strong>Back-End</strong>. Iniciei minha jornada em 2022 e estou em busca de oportunidades para ampliar meus conhecimentos teóricos e práticos e me tornar um <strong>Dev Front-End</strong>!</p>
             </div>
 
-            <img src="Images/SVG/logoRM.svg" alt="Foto pessoal" id="FotoPessoal">
+            <img src="Images/IMG/ProfilePic.jpeg" alt="Foto pessoal" id="FotoPessoal">
 
         </section>
 
         <section id="SobreMim" data-animation="left"> <!-- Seção de conteudos da aba "sobre mim" -->
 
             <h1 class="TituloDestaque">{Sobre mim}</h1>
-            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual. Iniciei este curso de nível superior em Agosto de 2022. <br> Comecei meus estudos sobre Desenvolvimento FrontEnd em Maio de 2022, estudando de forma totalmente autônoma.</p>
+            <p class="ConteudoTexto"> Estou atualmente cursando Sistemas de Informação, na PUC Minas Virtual. Iniciei este curso de nível superior em Agosto de 2022. Comecei meus estudos sobre Desenvolvimento em Maio de 2022, estudando de forma totalmente autônoma.</p>
 
             <input type="button" id="VejaMaisSobreMim" value="Ver mais">  
 
@@ -71,8 +67,9 @@
         <section id="Habilidades" data-animation="right"> <!-- Seção de conteudos da aba "habilidades" -->
 
             <h1 class="TituloDestaque">{Habilidades}</h1>
-            <p class="ConteudoTexto"> Desde o início dos meus estudos, me desenvolvi nas tecnologias <strong>HTML</strong> e <strong>CSS</strong>, <strong>JavaScript</strong>, na biblioteca Front-End <strong>Bootstrap</strong>. <br> Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. Além disso, também já tive contato com <strong>C#</strong>, <strong>C++</strong>, <strong>PHP</strong> e <strong>Python</strong>. <br> Ademais, sou fluente em <strong>Inglês</strong>.</p>
-            <a href="Images/PDF/Currículo_RendrykiMelo.pdf" download="Images/PDF/Currículo_RendrykiMelo.pdf" class="ConteudoTexto linkPDF"><strong>Baixar Currículo</strong></a>
+            <p class="ConteudoTexto"> Me desenvolvi nas tecnologias Front-End <strong>HTML, CSS e JavaScript</strong>, além também de dominar muito bem <strong>React</strong>. Possuo boa afinidade com a <strong>Lógica de Programação</strong>, sendo esse um dos primeiros motivos que me fizeram me interessar pelo Desenvolvimento. No Back-End, minhas maiores habilidades são em <strong>Node.js</strong>.</p>
+            <div id="TextoComplementarHabilidades"></div>
+            <a href="Images/PDF/Currículo-Rendryki Melo.pdf" download="Images/PDF/Currículo-Rendryki Melo.pdf" class="ConteudoTexto linkPDF"><strong>Baixar Currículo</strong></a>
             <a href="#" data-bs-toggle="modal" data-bs-target="#ModalBaixarCertificados" class="ConteudoTexto linkPDF" style="display: block;"><strong>Baixar Certificados</strong></a>
             
             <input type="button" id="VejaMaisHabilidades" value="Ver mais">  
@@ -111,18 +108,44 @@
                     <h3 class="LogoContatoTitulo">E-mail</h3>
                 </div>
 
-                <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="GitHub" data-bs-content="github.com/Rendryki">
-                    <img src="Images/SVG/logoGitHub.svg" alt="Logo contato GitHub" id="imgGitHub">
-                    <h3 class="LogoContatoTitulo">GitHub</h3>
+                
+                <div class="LogosContatos" data-animation="left">
+                   <a href='https://github.com/Rendryki' target='_blank' style="text-decoration: none;"> <img src="Images/SVG/logoGitHub.svg" alt="Logo contato GitHub" id="imgGitHub">
+                    <h3 class="LogoContatoTitulo">GitHub</h3></a>
                 </div>
+                
 
-                <div class="LogosContatos" data-animation="left" data-bs-toggle="popover" data-bs-placement="bottom" title="LinkedIn" data-bs-content="linkedin.com/in/rendryki-melo/">
+                <div class="LogosContatos" data-animation="left">
+                    <a href='https://www.linkedin.com/in/rendryki-melo/' target='_blank' style="text-decoration: none;">
                     <img src="Images/SVG/logoLinkedIn.svg" alt="Logo contato LinkedIn" id="imgLinkedIn">
-                    <h3 class="LogoContatoTitulo">LinkedIn</h3>
+                    <h3 class="LogoContatoTitulo">LinkedIn</h3></a>
                 </div>
                 
             </nav>
 
+        </section>
+
+        <section id="FormEmail" data-animation="in">
+            <h1 class="Form-Titulo">Me mande uma mensagem!</h1>
+            <form action="https://formsubmit.co/rendrykimelo.pro@gmail.com" method="POST">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nome</span>
+                    <input type="text" class="form-control" placeholder="Insira seu nome" name="name" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                    <input type="email" class="form-control" placeholder="Insira seu email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea placeholder="Insira sua mensagem" class="form-control" name="message" rows="5" required></textarea>
+                </div>
+
+                <input type="hidden" name="_next" value="https://rendryki.github.io/R_Portfolio/#Contato">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <button class="btn btn-primary" id="btn-enviar-form" type="submit">Enviar</button>
+               </form> 
         </section>
 
         <section id="ModalCertificados"> <!-- Seção de modals escondidas referentes a aba "projetos" -->

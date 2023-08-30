@@ -4,23 +4,27 @@
         "Nivel": "98"
     },
     {
-        "Habilidades": "Bootstrap", 
+        "Habilidades": "JavaScript", 
         "Nivel": "95"
     },
     {
-        "Habilidades": "JavaScript", 
+        "Habilidades": "TypeScript", 
         "Nivel": "80"
     },
     {
         "Habilidades": "React", 
+        "Nivel": "80"
+    },
+    {
+        "Habilidades": "Next.js", 
+        "Nivel": "80"
+    },
+    {
+        "Habilidades": "Node.js", 
         "Nivel": "70"
     },
     {
-        "Habilidades": "Chakra-UI", 
-        "Nivel": "70"
-    },
-    {
-        "Habilidades": "JQuery", 
+        "Habilidades": "Angular", 
         "Nivel": "70"
     },
     {
@@ -28,15 +32,23 @@
         "Nivel": "50"
     },
     {
-        "Habilidades": "PHP", 
+        "Habilidades": "Express", 
         "Nivel": "50"
     },
     {
-        "Habilidades": "C++ e C#", 
+        "Habilidades": "MySQL", 
+        "Nivel": "50"
+    },
+    {
+        "Habilidades": "Java", 
         "Nivel": "40"
     },
     {
+        "Habilidades": "C++ e C#", 
+        "Nivel": "35"
+    },
+    {
         "Habilidades": "Python", 
-        "Nivel": "25"
+        "Nivel": "35"
     }
 ]

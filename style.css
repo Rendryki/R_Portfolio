@@ -12,7 +12,6 @@
     --CorAuxiliar: #DEEFE7;
     --FontePesada: 500;
     --FonteLeve: 300;
-    --logoRM: url(Images/SVG/logoRMcompleto.svg);
     --RMlogosigla: url(Images/SVG/logoRM.svg);
 }
 /* variáveis do site com visualização clara */
@@ -23,7 +22,6 @@
     --CorAuxiliar: #BFBFBF;
     --FontePesada: 600;
     --FonteLeve: 500;
-    --logoRM: url(Images/SVG/logoRMcompleto-light.svg);
     --RMlogosigla: url(Images/SVG/logoRM-light.svg);
 }
 /* variáveis gerais/universais */
@@ -47,12 +45,6 @@ strong{
     margin: 7px 5%;
     margin-right: auto;
     width: 100px;
-}
-#LogoRM:hover{
-    content: var(--logoRM);
-    width: 308px;
-    margin-top: 7px;
-    margin-bottom: 3px;
 }
 #NavBarItens{
     margin-right: 5%;
@@ -92,10 +84,13 @@ strong{
     margin-top: 200px;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 60% 30%;
     gap: 10%;
     animation-name: fadeIn;  
     animation-duration: 3s; 
+}
+#TelaInicial div{
+    margin-top: 50px;
 }
 #TelaInicial img{
     width: 100%;
@@ -105,7 +100,10 @@ strong{
 }
 #FotoPessoal{
     margin: auto;
-    margin-top: 100px;
+    border-radius: 50%;
+    border: solid 3px var(--CorDestaque);
+    width: 100%;
+    height: 100%;
 }
 .btns-estilo-pagina{
     margin: 0;
@@ -131,7 +129,7 @@ strong{
     color: var(--CorBase);
     font-size: 1.2em;
     text-align: justify;
-    padding: 20px;  
+    padding: 5px;  
 }
 
 /* Seção Sobre Mim */
@@ -179,6 +177,17 @@ strong{
     border-style: solid;
     transition: 0.5s ease-in-out;
 }
+.BarrasProgresso{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 7%;
+    margin: auto;
+    align-items: center;
+}
+.card-habilidades{
+    margin: auto;
+    width: 100%;
+}
 .progress{
     margin: 0px 20px 30px 20px;
     background-color: var(--CorBackground);
@@ -192,9 +201,9 @@ strong{
 }
 .progress-titulo{
     color: var(--CorDestaque);
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: var(--FontePesada);
-    margin: 20px 20px 10px;
+    margin: 20px 20px 0px;
 }
 .linkPDF{
     text-decoration: none;
@@ -246,7 +255,7 @@ strong{
     margin: 2vw;
     padding: 15px;
     border-radius: 20px;
-    border: 2px solid var(--CorAuxiliar);
+    border: 2px solid var(--CorBackground);
 }
 .projectCardInformation{
     float: left;
@@ -344,6 +353,41 @@ strong{
 .LogosContatos:hover{
     transition: 0.5s ease-in-out;
     transform:  scale(1.2);
+}
+
+/* Seção Formulário de Contato */
+#FormEmail{
+    background-color: var(--CorDestaque);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto
+}
+#basic-addon1{
+    background-color: var(--CorBackground);
+    color: var(--CorDestaque);
+    width: 60px;
+}
+#btn-enviar-form{
+    background-color: var(--CorBackground);
+    color: var(--CorDestaque);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--CorAuxiliar);
+    font-weight: var(--FontePesada);
+    width: 100%;
+}
+.Form-Titulo{
+    color: var(--CorBackground);
+    font-weight: var(--FontePesada);
+    font-size: 2em;
+}
+#btn-enviar-form:hover{
+    border-color: var(--CorBackground);
+}
+.form-control:focus{
+    border-color: var(--CorBackground);
+    box-shadow: inset 0 1px 1px var(--CorBackground), 0 0 8px var(--CorBackground);
 }
 
 /* Seção Modals Projetos */
@@ -445,7 +489,6 @@ strong{
     }
     #FotoPessoal{
         margin: auto;
-        margin-top: 150px;
         max-width: 300px;
     }
     #VejaMaisHabilidades, #VejaMaisSobreMim{
@@ -453,6 +496,16 @@ strong{
         width: 15%;
         border-radius: 20px;
         margin: 20px 41%;
+    }
+    .BarrasProgresso{
+        grid-template-columns: 30% 30% 30%;
+        gap: 5%;
+    }
+    .progress{
+        margin: 0px 20px 10px 20px;
+    }
+    .progress-titulo{
+        font-size: 1.5vw;
     }
     #VejaMaisProjetos{
         padding: 5px;
@@ -512,6 +565,16 @@ strong{
         width: 20%;
         border-radius: 20px;
         margin: 20px 38%;
+    }
+    .BarrasProgresso{
+        grid-template-columns: 30% 30% 30%;
+        gap: 5%;
+    }
+    .progress{
+        margin: 0px 20px 10px 20px;
+    }
+    .progress-titulo{
+        font-size: 1.5vw;
     }
     #VejaMaisProjetos{
         padding: 5px;
@@ -590,13 +653,6 @@ strong{
         display: block;
         margin: 10px auto;
         content: var(--logoRM);
-        width: 300px;
-    }
-    #LogoRM:hover{
-        display: block;
-        margin: 10px auto;
-        content: var(--logoRM);
-        width: 300px;
     }
     #NavBar{
         display: block;
@@ -654,12 +710,17 @@ strong{
         text-align: justify;
         padding: 10px 0px;  
     }
+    .BarrasProgresso{
+        grid-template-columns: 45% 45%;
+        gap: 10%;
+        margin: 0px 0px 100px;
+    }
     .progress{
-        margin: 0px 0px 30px 0px;
+        margin: 0px 0px 0px 0px;
     }
     .progress-titulo{
         font-size: 3vw;
-        margin: 20px 0px 10px;
+        margin: 10px 0px 10px;
     }
     .btns-estilo-pagina{
         top: 120px;
@@ -676,6 +737,9 @@ strong{
     .LogosContatos img{
         width: 70px;   
         padding-bottom: 10px;
+    }
+    .Form-Titulo{
+        font-size: 1.5em;
     }
     .modal-title{
         font-size: 4vw; 
@@ -707,13 +771,6 @@ strong{
         display: block;
         margin: 10px auto;
         content: var(--logoRM);
-        width: 280px;
-    }
-    #LogoRM:hover{
-        display: block;
-        margin: 10px auto;
-        content: var(--logoRM);
-        width: 300px;
     }
     #NavBar{
         display: block;
@@ -754,12 +811,17 @@ strong{
         text-align: justify;
         padding: 10px 0px;  
     }
+    .BarrasProgresso{
+        grid-template-columns: 40% 40%;
+        gap: 20%;
+        margin: 0px 0px 150px;
+    }
     .progress{
-        margin: 0px 0px 30px 0px;
+        margin: 0px;
     }
     .progress-titulo{
         font-size: 4vw;
-        margin: 20px 0px 10px;
+        margin: 0px 0px 10px;
     }
     .btns-estilo-pagina{
         top: 110px;
@@ -792,6 +854,9 @@ strong{
     .LogosContatos img{
         width: 70px;   
         padding-bottom: 10px;
+    }
+    .Form-Titulo{
+        font-size: 1.2em;
     }
     .modal-title{
         font-size: 5vw; 
